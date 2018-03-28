@@ -5,42 +5,35 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class CourseSection {
 
+    public static int sectionCount = 0;
+
     private static AtomicLong nextCourseSectionId = new AtomicLong();
 
-    private long courseOfferingId;                 // unique courseOfferingID, corresponding to the CourseOffering that this CourseOffering is associated with
     private long courseSectionId;                  // unique courseSectionId
     private int enrolmentCapacity;
     private int enrolmentTotal;
     private ArrayList<String> instructors;          // instructor(s) that are teaching this section
     private String type;                            // component code (eg: LEC, SEM, TUT)
 
-    public CourseSection(long courseOfferingId) {
-        this.courseOfferingId = courseOfferingId;
+    public CourseSection() {
         this.courseSectionId = incrementAndGetCourseSectionId();
         this.instructors = new ArrayList<>();
-        this.type = new String();
+        sectionCount++;
     }
 
-    public CourseSection(long courseOfferingId, long courseSectionId, int enrolmentCapacity, int enrolmentTotal, ArrayList<String> instructors, String type) {
-        this.courseOfferingId = courseOfferingId;
-        this.courseSectionId = courseSectionId;
+    public CourseSection(int enrolmentCapacity, int enrolmentTotal, ArrayList<String> instructors, String type) {
+        this.courseSectionId = incrementAndGetCourseSectionId();
         this.enrolmentCapacity = enrolmentCapacity;
         this.enrolmentTotal = enrolmentTotal;
         this.instructors = instructors;
         this.type = type;
+        sectionCount++;
+
     }
 
     public long incrementAndGetCourseSectionId() {
         this.courseSectionId = CourseSection.nextCourseSectionId.incrementAndGet();
         return courseSectionId;
-    }
-
-    public long getCourseOfferingId() {
-        return courseOfferingId;
-    }
-
-    public void setCourseOfferingId(long courseOfferingId) {
-        this.courseOfferingId = courseOfferingId;
     }
 
     public long getCourseSectionId() {

@@ -2,7 +2,7 @@ package ca.courseplannerv1;
 
 //responsible for parsing a CSV file into our system
 
-import ca.courseplannerv1.model.CourseSection;
+import ca.courseplannerv1.model.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,10 +12,11 @@ import java.util.Scanner;
 public class CSVParser {
     //reads \data\course_data_2018.csv and saves its data into the system.
     //returns an arraylist of courses if successful, null otherwise and throws an exception
-    public static ArrayList<CourseSection> readCSV() {
+    public static void readCSV() {
 
         String csv = System.getProperty("user.dir");
         csv = csv + "\\data\\course_data_2018.csv";
+//        csv = csv + "\\data\\test.csv";
         System.out.println("csv = " + csv);
 
         File csvFile = new File(csv);
@@ -46,7 +47,6 @@ public class CSVParser {
                 lineCounter++;
                 currentLine = scanner.nextLine();
                 System.out.println("Read: " + currentLine);
-                System.out.println("currentLine.length() = " + currentLine.length());
 
                 String text = new String();
                 String[] line = new String[8];
@@ -79,10 +79,6 @@ public class CSVParser {
                         //save the text into line
                         line[wordCount] = text;
 
-                        for(int j = 0; j < line.length; j++) {
-                            System.out.print("|" + line[j] + "|");
-                        }
-
                         //reset wordCount
                         wordCount = 0;
 
@@ -98,7 +94,7 @@ public class CSVParser {
                 System.out.println("i = " + i);
 
                 //print out the current line
-                System.out.print("line: ");
+                System.out.print("current line: ");
                 for(int j = 0; j < line.length; j++) {
                     System.out.print("|" + line[j] + "|");
                 }
@@ -107,14 +103,23 @@ public class CSVParser {
 
                 //instantiate a new course object
                 //add the newly created course object into classList
-                saveCourse(line, classList);
-                classList.get(classList.size() - 1).printCourseOffering();
-
-
+                myModel.saveLineIntoSystem(line);
 
             }
-            System.out.println("lineCounter = " + lineCounter);
-            System.out.println("classList.size()" + classList.size());
+            System.out.println("myModel.insertions = " + myModel.insertions);
+            System.out.println("CourseSection.sectionCount = " + CourseSection.sectionCount);
+            System.out.println("CourseOffering.courseOfferingCount = " + CourseOffering.courseOfferingCount);
+            System.out.println("Course.courseCount = " + Course.courseCount);
+            System.out.println("Department.departmentCount = " + Department.departmentCount);
+            System.out.println("myModel.departments.size() = " + myModel.departments.size());
+            System.out.println("myModel.departments.get(1).getDeptName() = " + myModel.departments.get(1).getDeptName());
+            System.out.println("myModel.departments.get(1).getCourses().size() = " + myModel.departments.get(1).getCourses().size());
+            System.out.println("myModel.departments.get(1).getCourses().get(1).getCatalogNumber() = " + myModel.departments.get(1).getCourses().get(1).getCatalogNumber());
+            System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size());
+            System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation());
+            System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation());
+            System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size());
+
             System.out.println(scanner.hasNextLine());
             System.out.println(scanner.hasNext());
 
@@ -125,55 +130,8 @@ public class CSVParser {
             e.printStackTrace();
         }
 
-
-        return classList;
     }
 
-    //precondition: line contains 8 strings
-    //postcondition: saves the 8 elements of line into course object and saves the newly created course object into
-    //classList
-    //returns true if action successful, otherwise false
-    public static boolean saveCourse(String[] line, ArrayList<CourseSection> classList) {
-        int sizeBefore = classList.size();
-
-        //instantiate a new course object
-        CourseSection newClass = new CourseSection(
-                Integer.valueOf(line[0]),   //semester code
-                line[1],                    //subject
-                line[2],                    //catalog number
-                line[3],                    //location
-                Integer.valueOf(line[4]),   //enrolment capacity
-                Integer.valueOf(line[5]),   //enrolment total
-                splitString(line[6]),//instructors
-                line[7]                     //component code
-        );
-
-        //add the newly created course object into fileList
-        classList.add(newClass);
-
-        int sizeAfter = classList.size();
-
-        if(sizeAfter > sizeBefore) {
-            return true;
-        }
-        else {
-            return false;
-        }
-
-    }
-
-    //convert a single string of instructors, divided by comma into a string array
-    public static ArrayList<String> splitString(String longString) {
-        ArrayList<String> stringArrayList = new ArrayList<>();
-
-        String[] stringArray = longString.split(",");
-
-        for(String str : stringArray) {
-            stringArrayList.add(str);
-        }
-
-        return stringArrayList;
-    }
 
 
 

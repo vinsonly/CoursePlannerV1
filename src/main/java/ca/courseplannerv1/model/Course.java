@@ -7,6 +7,8 @@ import java.util.concurrent.atomic.AtomicLong;
 //each course offering contains many classes.
 public class Course {
 
+    public static int courseCount = 0;
+
     private static AtomicLong nextCourseId = new AtomicLong();
 
     private long courseId;              // unique course id
@@ -26,20 +28,36 @@ public class Course {
         this.catalogNumber = new String();
         this.locations = new ArrayList<>();
         this.courseOfferings = new ArrayList<>();
+        courseCount++;
     }
 
     //parametrized constructor
-    public Course(long courseId, String deptName, String catalogNumber, ArrayList<String> locations, ArrayList<CourseOffering> courseOfferings) {
+    public Course(String deptName, String catalogNumber, ArrayList<String> locations, ArrayList<CourseOffering> courseOfferings) {
         this.courseId = incrementAndGetCourseId();
         this.deptName = deptName;
         this.catalogNumber = catalogNumber;
         this.locations = locations;
         this.courseOfferings = courseOfferings;
+        courseCount++;
+    }
+
+    //parametrized constructor
+    public Course(String deptName, String catalogNumber, String location, CourseOffering courseOffering) {
+        ArrayList<String> locations = new ArrayList<>();
+        locations.add(location);
+        ArrayList<CourseOffering> offerings = new ArrayList<>();
+        offerings.add(courseOffering);
+        this.courseId = incrementAndGetCourseId();
+        this.deptName = deptName;
+        this.catalogNumber = catalogNumber;
+        this.locations = locations;
+        this.courseOfferings = offerings;
+        courseCount++;
     }
 
     //insert courseOffering into courseOfferings, in sorted order.
     //returns true if successful, false otherwise.
-    private boolean insertNewCourseOffering(CourseOffering courseOffering) {
+    public boolean insertNewCourseOffering(CourseOffering courseOffering) {
         courseOfferings.add(courseOffering);
         return true;
     }

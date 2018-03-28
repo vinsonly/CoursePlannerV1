@@ -6,6 +6,8 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class CourseOffering {
 
+    public static int courseOfferingCount = 0;
+
     private static AtomicLong nextCourseOfferingId = new AtomicLong();
 
     private long courseOfferingId;                      // unique courseOfferingID
@@ -22,17 +24,33 @@ public class CourseOffering {
         this.location = new String();
         this.aggregatedInstructors = new ArrayList<>();
         this.courseSections = new ArrayList<>(courseSections);
+        courseOfferingCount++;
     }
 
     //parameterized constructor
-    public CourseOffering(long courseOfferingId, Semester sem, String location, ArrayList<String> aggregatedInstructors, int aggregatedEnrolmentCap, int aggregatedEnrolmentTotal, ArrayList<CourseSection> courseSections) {
-        this.courseOfferingId = courseOfferingId;
+    public CourseOffering(Semester sem, String location, ArrayList<String> aggregatedInstructors, int aggregatedEnrolmentCap, int aggregatedEnrolmentTotal, ArrayList<CourseSection> courseSections) {
+        this.courseOfferingId = incrementAndGetCourseOfferingId();
         this.sem = sem;
         this.location = location;
         this.aggregatedInstructors = aggregatedInstructors;
         this.aggregatedEnrolmentCap = aggregatedEnrolmentCap;
         this.aggregatedEnrolmentTotal = aggregatedEnrolmentTotal;
         this.courseSections = courseSections;
+        courseOfferingCount++;
+    }
+
+    //parametrized contrusctor
+    public CourseOffering(Semester sem, String location, ArrayList<String> aggregatedInstructors, int aggregatedEnrolmentCap, int aggregatedEnrolmentTotal, CourseSection section) {
+        ArrayList<CourseSection> sections = new ArrayList<>();
+        sections.add(section);
+        this.courseOfferingId = incrementAndGetCourseOfferingId();
+        this.sem = sem;
+        this.location = location;
+        this.aggregatedInstructors = aggregatedInstructors;
+        this.aggregatedEnrolmentCap = aggregatedEnrolmentCap;
+        this.aggregatedEnrolmentTotal = aggregatedEnrolmentTotal;
+        this.courseSections = sections;
+        courseOfferingCount++;
     }
 
 
@@ -45,6 +63,26 @@ public class CourseOffering {
     //returns true if successful, false otherwise.
     public boolean insertCourseSection(CourseSection section) {
         this.courseSections.add(section);
+        this.aggregatedEnrolmentCap += section.getEnrolmentCapacity();
+        this.aggregatedEnrolmentTotal += section.getEnrolmentTotal();
+
+        //for each newInstructor, check if it is already one of the old instructors, else insert
+        for(String newInstructor : section.getInstructors()) {
+            boolean found = false;
+            for(String oldInstructor : aggregatedInstructors) {
+
+                if(newInstructor.equals(oldInstructor)) {
+                    found = true;
+                    break;
+                }
+
+            }
+
+            if(found == false) {
+                aggregatedInstructors.add(newInstructor);
+            }
+        }
+
         return true;
     }
 

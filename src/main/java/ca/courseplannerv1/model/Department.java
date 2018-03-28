@@ -5,6 +5,8 @@ import java.util.concurrent.atomic.AtomicLong;
 
 //has many courses
 public class Department {
+    public static int departmentCount = 0;
+
 
     private static AtomicLong nextDeptId = new AtomicLong();
 
@@ -29,6 +31,7 @@ public class Department {
         this.deptId = incrementAndGetDeptId();
         this.deptName = new String();
         this.courses = new ArrayList<>();
+        departmentCount++;
     }
 
     //parametrized constructor
@@ -36,11 +39,23 @@ public class Department {
         this.deptId = incrementAndGetDeptId();
         this.deptName = deptName;
         this.courses = courses;
+        departmentCount++;
     }
+
+    //parametrized constructor
+    public Department(String deptName, Course course) {
+        ArrayList<Course> courses = new ArrayList<>();
+        courses.add(course);
+        this.deptId = incrementAndGetDeptId();
+        this.deptName = deptName;
+        this.courses = courses;
+        departmentCount++;
+    }
+
 
     //insert course into courses, in sorted order
     //returns true if successful, false otherwise.
-    private boolean insertNewCourse(Course course) {
+    public boolean insertNewCourse(Course course) {
         courses.add(course);
         return true;
     }
