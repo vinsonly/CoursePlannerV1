@@ -14,11 +14,16 @@ public class CourseSection {
     private int enrolmentTotal;
     private ArrayList<String> instructors;          // instructor(s) that are teaching this section
     private String type;                            // component code (eg: LEC, SEM, TUT)
+    private ArrayList<CourseSubSection> subSections;// the individual classes that are in this section
 
     public CourseSection() {
         this.courseSectionId = incrementAndGetCourseSectionId();
         this.instructors = new ArrayList<>();
         sectionCount++;
+        this.enrolmentCapacity = 0;
+        this.enrolmentTotal = 0;
+        this.type = new String();
+        this.subSections = new ArrayList<>();
     }
 
     public CourseSection(int enrolmentCapacity, int enrolmentTotal, ArrayList<String> instructors, String type) {
@@ -28,12 +33,67 @@ public class CourseSection {
         this.instructors = instructors;
         this.type = type;
         sectionCount++;
+    }
 
+    public CourseSection(CourseSubSection subSection) {
+        this.courseSectionId = incrementAndGetCourseSectionId();
+        this.instructors = subSection.getInstructors();
+        this.enrolmentCapacity = subSection.getEnrolmentCapacity();
+        this.enrolmentTotal = subSection.getEnrolmentTotal();
+        this.type = subSection.getType();
+        this.subSections = new ArrayList<>();
+        this.subSections.add(subSection);
+        sectionCount++;
     }
 
     public long incrementAndGetCourseSectionId() {
         this.courseSectionId = CourseSection.nextCourseSectionId.incrementAndGet();
         return courseSectionId;
+    }
+
+    //insert section into courseSections, in sorted order.
+    //returns true if successful, false otherwise.
+    public boolean insertCourseSubSection(CourseSubSection subSection) {
+
+        if(this.type.equals(subSection.getType()) == false) {
+            return false;
+        }
+
+        this.subSections.add(subSection);
+        this.enrolmentCapacity += subSection.getEnrolmentCapacity();
+        this.enrolmentTotal += subSection.getEnrolmentTotal();
+
+        //for each newInstructor, check if it is already one of the old instructors, else insert
+        for(String newInstructor : subSection.getInstructors()) {
+            boolean found = false;
+            for(String oldInstructor : instructors) {
+
+                if(newInstructor.equals(oldInstructor)) {
+                    found = true;
+                    break;
+                }
+
+            }
+
+            if(found == false) {
+                instructors.add(newInstructor);
+            }
+        }
+
+        return true;
+    }
+
+    // precondition: thisType is not equal to otherSection.getType()
+    // returns true if thisType is less than otherType
+    public boolean lessThan(CourseSection otherSection) {
+        String otherType = otherSection.getType();
+        String thisType = this.getType();
+
+        if(thisType == otherType) {
+            return false;
+        }
+
+        return myModel.compareString(thisType, otherType);
     }
 
     public long getCourseSectionId() {
@@ -76,4 +136,3 @@ public class CourseSection {
         this.type = type;
     }
 }
-

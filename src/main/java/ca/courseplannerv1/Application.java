@@ -1,5 +1,6 @@
 package ca.courseplannerv1;
 
+import ca.courseplannerv1.model.myModel;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,6 +13,12 @@ public class Application {
 
         //parse \data\course_data_2018.csv into our system.
         CSVParser.readCSV();
+//        myModel.printModelInfo();
+//        myModel.printDepartments();
+//        myModel.departments.get(1).printCourses();
+//        myModel.departments.get(1).getCourses().get(1).printOfferings();
+//        myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).printSections();
+        myModel.dumpModel();
 
     }
 }

@@ -56,8 +56,26 @@ public class Department {
     //insert course into courses, in sorted order
     //returns true if successful, false otherwise.
     public boolean insertNewCourse(Course course) {
+        boolean added = false;
+        //if this.departments is empty, add
+        if(courses.size() == 0) {
+            courses.add(course);
+            return added = true;
+        }
+
+        int currentIndex = 0;
+        for(Course savedCourse : courses) {
+            if(course.lessThan(savedCourse)) {
+                courses.add(currentIndex, course);
+                return added = true;
+            }
+            else {
+                currentIndex++;
+            }
+        }
+
         courses.add(course);
-        return true;
+        return added = true;
     }
 
     //search for a course
@@ -69,6 +87,21 @@ public class Department {
         }
 
         throw new RuntimeException("Course with courseID: " + courseId + " not found.");
+    }
+
+    //compares the deptNames
+    //returns true if thisDept is less than otherDept, false otherwise
+    public boolean lessThan(Department otherDept) {
+        String otherName = otherDept.getDeptName();
+        String thisName = this.deptName;
+
+        return myModel.compareString(thisName, otherName);
+    }
+
+    public void printCourses() {
+        for(Course course : courses) {
+            System.out.println(course.getCatalogNumber());
+        }
     }
 
     //getters and setters

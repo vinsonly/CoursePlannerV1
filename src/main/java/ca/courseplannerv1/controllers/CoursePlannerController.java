@@ -1,5 +1,6 @@
 package ca.courseplannerv1.controllers;
 
+import ca.courseplannerv1.model.myModel;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,9 +12,8 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class CoursePlannerController {
-
     @GetMapping("/dump-model")
     public void dumpModel() {
-        //executes myModel.dumpModel()
+        myModel.dumpModel();
     }
 }

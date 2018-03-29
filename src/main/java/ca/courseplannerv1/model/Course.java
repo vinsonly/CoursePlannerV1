@@ -16,9 +16,9 @@ public class Course {
     private String catalogNumber;       // eg: 300, 250W, X99, 2XX
     private ArrayList<String> locations;// list of locations where this course is offered, sorted alphabetically
 
-    //n CourseOfferings for n Locations
+    //Each courseOffering has a unique location and semester pairing
     //one courseOffering for each
-    //stored in sorted order by location
+    //stored in sorted order by semesterCode and location
     private ArrayList<CourseOffering> courseOfferings;
 
     //default constructor
@@ -58,8 +58,55 @@ public class Course {
     //insert courseOffering into courseOfferings, in sorted order.
     //returns true if successful, false otherwise.
     public boolean insertNewCourseOffering(CourseOffering courseOffering) {
-        courseOfferings.add(courseOffering);
-        return true;
+        boolean added = false;
+        boolean found = false;
+
+        if(courseOfferings.size() == 0) {
+            courseOfferings.add(courseOffering);
+            return added = true;
+        }
+
+        for(CourseOffering offering : this.courseOfferings) {
+            //check if a courseOffering at the same location, during the same semester is present, if false, insert, else don't
+            if (courseOffering.getLocation().equals(offering.getLocation()) && courseOffering.getSem().getSemCode() == offering.getSem().getSemCode()) {
+                found = true;
+                break;
+            }
+        }
+
+        if(found == false) {
+            int currentIndex = 0;
+            for(CourseOffering savedOffering : courseOfferings) {
+                if(courseOffering.lessThan(savedOffering)) {
+                    courseOfferings.add(currentIndex, courseOffering);
+                    locations.add(currentIndex, courseOffering.getLocation());
+                    return added = true;
+                }
+                else {
+                    currentIndex++;
+                }
+            }
+
+            courseOfferings.add(courseOffering);
+            locations.add(courseOffering.getLocation());
+            return added = true;
+        }
+        return added;
+    }
+
+    //compares the catalogNumbers
+    //returns true if thisCourse is less than otherCourse, false otherwise
+    public boolean lessThan(Course otherCourse) {
+        String otherNum = otherCourse.getCatalogNumber();
+        String thisNum = this.catalogNumber;
+
+        return myModel.compareString(thisNum, otherNum);
+    }
+
+    public void printOfferings() {
+        for(CourseOffering offering : courseOfferings) {
+            System.out.println(offering.getSem().getSemCode() + ", " + offering.getLocation());
+        }
     }
 
     //getters and setters

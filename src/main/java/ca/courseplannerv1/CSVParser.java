@@ -15,9 +15,10 @@ public class CSVParser {
     public static void readCSV() {
 
         String csv = System.getProperty("user.dir");
-        csv = csv + "\\data\\course_data_2018.csv";
+//        csv = csv + "\\data\\course_data_2018.csv";
 //        csv = csv + "\\data\\test.csv";
-        System.out.println("csv = " + csv);
+        csv = csv + "\\data\\course_data_2016.csv";
+//        System.out.println("csv = " + csv);
 
         File csvFile = new File(csv);
 
@@ -46,7 +47,7 @@ public class CSVParser {
 
                 lineCounter++;
                 currentLine = scanner.nextLine();
-                System.out.println("Read: " + currentLine);
+//                System.out.println("Read: " + currentLine);
 
                 String text = new String();
                 String[] line = new String[8];
@@ -91,37 +92,22 @@ public class CSVParser {
                     }
 
                 }
-                System.out.println("i = " + i);
 
                 //print out the current line
-                System.out.print("current line: ");
-                for(int j = 0; j < line.length; j++) {
-                    System.out.print("|" + line[j] + "|");
-                }
-                System.out.println("");
-                System.out.println("");
+//                System.out.print("current line: ");
+//                for(int j = 0; j < line.length; j++) {
+//                    System.out.print("|" + line[j] + "|");
+//                }
+//                System.out.println("");
+//                System.out.println("");
 
                 //instantiate a new course object
                 //add the newly created course object into classList
                 myModel.saveLineIntoSystem(line);
 
             }
-            System.out.println("myModel.insertions = " + myModel.insertions);
-            System.out.println("CourseSection.sectionCount = " + CourseSection.sectionCount);
-            System.out.println("CourseOffering.courseOfferingCount = " + CourseOffering.courseOfferingCount);
-            System.out.println("Course.courseCount = " + Course.courseCount);
-            System.out.println("Department.departmentCount = " + Department.departmentCount);
-            System.out.println("myModel.departments.size() = " + myModel.departments.size());
-            System.out.println("myModel.departments.get(1).getDeptName() = " + myModel.departments.get(1).getDeptName());
-            System.out.println("myModel.departments.get(1).getCourses().size() = " + myModel.departments.get(1).getCourses().size());
-            System.out.println("myModel.departments.get(1).getCourses().get(1).getCatalogNumber() = " + myModel.departments.get(1).getCourses().get(1).getCatalogNumber());
-            System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size());
-            System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation());
-            System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation());
-            System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size());
-
-            System.out.println(scanner.hasNextLine());
-            System.out.println(scanner.hasNext());
+//            System.out.println(scanner.hasNextLine());
+//            System.out.println(scanner.hasNext());
 
 
             scanner.close();
