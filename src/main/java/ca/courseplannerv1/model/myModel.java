@@ -43,6 +43,7 @@ public class myModel {
     //returns true if action successful, otherwise false
     public static boolean saveLineIntoSystem(String[] line) {
 
+        //if the line is not complete, dont save into our system
         if(line.length != 8) {
             return false;
         }
@@ -170,6 +171,7 @@ public class myModel {
         return stringArrayList;
     }
 
+    //prints random information from the model to test the data that is being inputted
     public static void printModelInfo() {
         System.out.println("myModel.insertions = " + myModel.insertions);
         System.out.println("CourseSubSection.subSectionCount = " + CourseSubSection.subSectionCount);
@@ -187,6 +189,7 @@ public class myModel {
         System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size());
     }
 
+    //prints all the departments in the model
     public static void printDepartments() {
         for(Department department : departments) {
             System.out.println(department.getDeptName());
@@ -216,6 +219,7 @@ public class myModel {
             shortestStrLength = str2.length();
         }
 
+        //loop through each of the strings and compare each of the characters
         for(int i = 0; i < shortestStrLength; i++) {
 
             //convert the ith character in each string to integer value and compare.
@@ -230,7 +234,9 @@ public class myModel {
             }
         }
 
-        //if we are at the last letter and so far the strings are the same, then return false if the otherName has less letters
+        //if we are at the last letter and so far the strings are the same,
+        // then return true if str1 is shorter than str2
+        // else return false
         if(str1.length() < str2.length()) {
             return true;
         }

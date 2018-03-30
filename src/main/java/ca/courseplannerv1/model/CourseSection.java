@@ -3,6 +3,9 @@ package ca.courseplannerv1.model;
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicLong;
 
+//A course section that aggregates the instructors, enrolment capacities, and enrolment totals
+//for a unique type
+//belongs to a course offering of a unique
 public class CourseSection {
 
     public static int sectionCount = 0;
@@ -16,6 +19,7 @@ public class CourseSection {
     private String type;                            // component code (eg: LEC, SEM, TUT)
     private ArrayList<CourseSubSection> subSections;// the individual classes that are in this section
 
+    //default constructor
     public CourseSection() {
         this.courseSectionId = incrementAndGetCourseSectionId();
         this.instructors = new ArrayList<>();
@@ -26,6 +30,7 @@ public class CourseSection {
         this.subSections = new ArrayList<>();
     }
 
+    //parameterized constructor
     public CourseSection(int enrolmentCapacity, int enrolmentTotal, ArrayList<String> instructors, String type) {
         this.courseSectionId = incrementAndGetCourseSectionId();
         this.enrolmentCapacity = enrolmentCapacity;
@@ -35,6 +40,7 @@ public class CourseSection {
         sectionCount++;
     }
 
+    //parameterized constructor
     public CourseSection(CourseSubSection subSection) {
         this.courseSectionId = incrementAndGetCourseSectionId();
         this.instructors = subSection.getInstructors();

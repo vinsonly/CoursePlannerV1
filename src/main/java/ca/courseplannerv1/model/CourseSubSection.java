@@ -2,6 +2,7 @@ package ca.courseplannerv1.model;
 
 import java.util.ArrayList;
 
+//an individual class, representing one line from the csv file
 public class CourseSubSection {
 
     public static int subSectionCount = 0;

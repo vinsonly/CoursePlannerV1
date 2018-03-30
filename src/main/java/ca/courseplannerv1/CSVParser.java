@@ -29,6 +29,8 @@ public class CSVParser {
         int wordCount = 0;
         int lineCounter = 0;
 
+        //boolean that determines whether there are multiple strings that need to be divided in this field
+        //multistrings are indicated by "
         boolean isMultiString = false;
 
         try {
@@ -47,7 +49,6 @@ public class CSVParser {
 
                 lineCounter++;
                 currentLine = scanner.nextLine();
-//                System.out.println("Read: " + currentLine);
 
                 String text = new String();
                 String[] line = new String[8];
@@ -55,7 +56,7 @@ public class CSVParser {
 //                split the string up divided by ","
                 for(i = 0; i < currentLine.length(); i++) {
 
-                    if(currentLine.charAt(i) == ','&& (isMultiString == false)) {
+                    if(currentLine.charAt(i) == ',' && (isMultiString == false)) {
 
                         text = text.trim();
 
@@ -67,10 +68,13 @@ public class CSVParser {
 
                         //reset text
                         text = new String();
+
+                    //check if this is a start or end of a multi string
                     } else if(currentLine.charAt(i) == '"') {
 
                         isMultiString = !isMultiString;
 
+                    //check if this character is the last character in the line
                     } else if(i == (currentLine.length() - 1)) {
                         //save the character into text
                         text = text + currentLine.charAt(i);
@@ -93,24 +97,14 @@ public class CSVParser {
 
                 }
 
-                //print out the current line
-//                System.out.print("current line: ");
-//                for(int j = 0; j < line.length; j++) {
-//                    System.out.print("|" + line[j] + "|");
-//                }
-//                System.out.println("");
-//                System.out.println("");
 
-                //instantiate a new course object
-                //add the newly created course object into classList
+                //save the current line into myModel
                 myModel.saveLineIntoSystem(line);
 
             }
-//            System.out.println(scanner.hasNextLine());
-//            System.out.println(scanner.hasNext());
-
 
             scanner.close();
+
         } catch (FileNotFoundException e) {
             System.out.println();
             e.printStackTrace();
