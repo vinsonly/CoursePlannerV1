@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class CoursePlannerController {
-    @GetMapping("/dump-model")
+    @GetMapping("/api/dump-model")
     public void dumpModel() {
         myModel.dumpModel();
         myModel.dumpModelToFile();
