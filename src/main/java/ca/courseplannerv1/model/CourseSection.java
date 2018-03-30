@@ -21,7 +21,7 @@ public class CourseSection {
 
     //default constructor
     public CourseSection() {
-        this.courseSectionId = incrementAndGetCourseSectionId();
+        this.courseSectionId = getAndIncrementCourseSectionId();
         this.instructors = new ArrayList<>();
         sectionCount++;
         this.enrolmentCapacity = 0;
@@ -32,7 +32,7 @@ public class CourseSection {
 
     //parameterized constructor
     public CourseSection(int enrolmentCapacity, int enrolmentTotal, ArrayList<String> instructors, String type) {
-        this.courseSectionId = incrementAndGetCourseSectionId();
+        this.courseSectionId = getAndIncrementCourseSectionId();
         this.enrolmentCapacity = enrolmentCapacity;
         this.enrolmentTotal = enrolmentTotal;
         this.instructors = instructors;
@@ -42,7 +42,7 @@ public class CourseSection {
 
     //parameterized constructor
     public CourseSection(CourseSubSection subSection) {
-        this.courseSectionId = incrementAndGetCourseSectionId();
+        this.courseSectionId = getAndIncrementCourseSectionId();
         this.instructors = subSection.getInstructors();
         this.enrolmentCapacity = subSection.getEnrolmentCapacity();
         this.enrolmentTotal = subSection.getEnrolmentTotal();
@@ -52,8 +52,8 @@ public class CourseSection {
         sectionCount++;
     }
 
-    public long incrementAndGetCourseSectionId() {
-        this.courseSectionId = CourseSection.nextCourseSectionId.incrementAndGet();
+    public long getAndIncrementCourseSectionId() {
+        this.courseSectionId = CourseSection.nextCourseSectionId.getAndIncrement();
         return courseSectionId;
     }
 

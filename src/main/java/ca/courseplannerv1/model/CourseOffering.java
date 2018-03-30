@@ -19,7 +19,7 @@ public class CourseOffering {
                                                         // one unique courseSection per type
     //default constructor
     public CourseOffering() {
-        this.courseOfferingId = incrementAndGetCourseOfferingId();
+        this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.location = new String();
         this.courseSections = new ArrayList<>(courseSections);
         this.instructors = new ArrayList<String>();
@@ -28,7 +28,7 @@ public class CourseOffering {
 
     //parameterized constructor
     public CourseOffering(Semester sem, String location, ArrayList<String> instructors, ArrayList<CourseSection> courseSections) {
-        this.courseOfferingId = incrementAndGetCourseOfferingId();
+        this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.sem = sem;
         this.location = location;
         this.courseSections = courseSections;
@@ -40,7 +40,7 @@ public class CourseOffering {
     public CourseOffering(Semester sem, String location, ArrayList<String> instructors, CourseSection section) {
         ArrayList<CourseSection> sections = new ArrayList<>();
         sections.add(section);
-        this.courseOfferingId = incrementAndGetCourseOfferingId();
+        this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.sem = sem;
         this.location = location;
         this.courseSections = sections;
@@ -49,8 +49,8 @@ public class CourseOffering {
     }
 
 
-    public long incrementAndGetCourseOfferingId() {
-        this.courseOfferingId = CourseOffering.nextCourseOfferingId.incrementAndGet();
+    public long getAndIncrementCourseOfferingId() {
+        this.courseOfferingId = CourseOffering.nextCourseOfferingId.getAndIncrement();
         return courseOfferingId;
     }
 

@@ -25,7 +25,7 @@ public class Course {
 
     //default constructor
     public Course() {
-        this.courseId = incrementAndGetCourseId();
+        this.courseId = getAndIncrementCourseId();
         this.deptName = new String();
         this.catalogNumber = new String();
         this.locations = new ArrayList<>();
@@ -35,7 +35,7 @@ public class Course {
 
     //parametrized constructor
     public Course(String deptName, String catalogNumber, ArrayList<String> locations, ArrayList<CourseOffering> courseOfferings) {
-        this.courseId = incrementAndGetCourseId();
+        this.courseId = getAndIncrementCourseId();
         this.deptName = deptName;
         this.catalogNumber = catalogNumber;
         this.locations = locations;
@@ -49,7 +49,7 @@ public class Course {
         locations.add(location);
         ArrayList<CourseOffering> offerings = new ArrayList<>();
         offerings.add(courseOffering);
-        this.courseId = incrementAndGetCourseId();
+        this.courseId = getAndIncrementCourseId();
         this.deptName = deptName;
         this.catalogNumber = catalogNumber;
         this.locations = locations;
@@ -124,8 +124,8 @@ public class Course {
 
     //getters and setters
 
-    public long incrementAndGetCourseId() {
-        this.courseId = Course.nextCourseId.incrementAndGet();
+    public long getAndIncrementCourseId() {
+        this.courseId = Course.nextCourseId.getAndIncrement();
         return courseId;
     }
 

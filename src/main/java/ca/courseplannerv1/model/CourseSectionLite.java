@@ -2,22 +2,22 @@ package ca.courseplannerv1.model;
 
 public class CourseSectionLite {
     private String type;
-    private int enrollmentTotal;
     private int enrollmentCap;
+    private int enrollmentTotal;
 
     public CourseSectionLite() {
     }
 
     public CourseSectionLite(String type, int enrollmentTotal, int enrollmentCap) {
         this.type = type;
-        this.enrollmentTotal = enrollmentTotal;
         this.enrollmentCap = enrollmentCap;
+        this.enrollmentTotal = enrollmentTotal;
     }
 
     public CourseSectionLite(CourseSection courseSection) {
         this.type = courseSection.getType();
-        this.enrollmentTotal = courseSection.getEnrolmentTotal();
         this.enrollmentCap = courseSection.getEnrolmentCapacity();
+        this.enrollmentTotal = courseSection.getEnrolmentTotal();
     }
 
     public String getType() {
@@ -28,19 +28,19 @@ public class CourseSectionLite {
         this.type = type;
     }
 
-    public int getEnrollmentTotal() {
-        return enrollmentTotal;
-    }
-
-    public void setEnrollmentTotal(int enrollmentTotal) {
-        this.enrollmentTotal = enrollmentTotal;
-    }
-
     public int getEnrollmentCap() {
         return enrollmentCap;
     }
 
     public void setEnrollmentCap(int enrollmentCap) {
         this.enrollmentCap = enrollmentCap;
+    }
+
+    public int getEnrollmentTotal() {
+        return enrollmentTotal;
+    }
+
+    public void setEnrollmentTotal(int enrollmentTotal) {
+        this.enrollmentTotal = enrollmentTotal;
     }
 }

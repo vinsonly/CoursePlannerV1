@@ -30,7 +30,7 @@ public class Department {
 
     //default constructor
     public Department() {
-        this.deptId = incrementAndGetDeptId();
+        this.deptId = getAndIncrementDeptId();
         this.deptName = new String();
         this.courses = new ArrayList<>();
         departmentCount++;
@@ -38,7 +38,7 @@ public class Department {
 
     //parametrized constructor
     public Department(String deptName, ArrayList<Course> courses) {
-        this.deptId = incrementAndGetDeptId();
+        this.deptId = getAndIncrementDeptId();
         this.deptName = deptName;
         this.courses = courses;
         departmentCount++;
@@ -48,7 +48,7 @@ public class Department {
     public Department(String deptName, Course course) {
         ArrayList<Course> courses = new ArrayList<>();
         courses.add(course);
-        this.deptId = incrementAndGetDeptId();
+        this.deptId = getAndIncrementDeptId();
         this.deptName = deptName;
         this.courses = courses;
         departmentCount++;
@@ -129,8 +129,8 @@ public class Department {
         this.courses = courses;
     }
 
-    public long incrementAndGetDeptId() {
-        this.deptId = Department.nextDeptId.incrementAndGet();
+    public long getAndIncrementDeptId() {
+        this.deptId = Department.nextDeptId.getAndIncrement();
         return deptId;
     }
 }

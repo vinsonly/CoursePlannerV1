@@ -15,9 +15,9 @@ public class CSVParser {
     public static void readCSV() {
 
         String csv = System.getProperty("user.dir");
-//        csv = csv + "\\data\\course_data_2018.csv";
+        csv = csv + "\\data\\course_data_2018.csv";
 //        csv = csv + "\\data\\test.csv";
-        csv = csv + "\\data\\course_data_2016.csv";
+//        csv = csv + "\\data\\course_data_2016.csv";
 //        System.out.println("csv = " + csv);
 
         System.out.println("Parsing " + csv + " into system.");
