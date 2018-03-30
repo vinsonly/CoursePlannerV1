@@ -22,7 +22,7 @@ public class CourseOffering {
         this.courseOfferingId = incrementAndGetCourseOfferingId();
         this.location = new String();
         this.courseSections = new ArrayList<>(courseSections);
-        this.instructors = new ArrayList<>();
+        this.instructors = new ArrayList<String>();
         courseOfferingCount++;
     }
 

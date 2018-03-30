@@ -1,9 +1,7 @@
 package ca.courseplannerv1.model;
 
-import ca.courseplannerv1.CSVParser;
+import ca.courseplannerv1.controllers.CoursePlannerController;
 
-import javax.validation.constraints.Null;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
@@ -247,6 +245,17 @@ public class myModel {
         else {
             return false;
         }
+    }
+
+    //find department given deptID
+    public static Department findDepartment(long deptID) {
+        for(Department thisDept : departments) {
+            if(thisDept.getDeptId() == deptID) {
+                return thisDept;
+            }
+        }
+
+        throw new CoursePlannerController.DepartmentNotFoundException(deptID);
     }
 
     //dumps the model into console

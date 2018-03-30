@@ -1,5 +1,7 @@
 package ca.courseplannerv1.model;
 
+import ca.courseplannerv1.controllers.CoursePlannerController;
+
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -79,14 +81,14 @@ public class Department {
     }
 
     //search for a course
-    private Course findCourse(long courseId) {
+    public Course findCourse(long courseId) {
         for(Course course : courses) {
             if(course.getCourseId() == courseId) {
                 return course;
             }
         }
 
-        throw new RuntimeException("Course with courseID: " + courseId + " not found.");
+        throw new CoursePlannerController.CourseNotFoundException(courseId);
     }
 
     //compares the deptNames

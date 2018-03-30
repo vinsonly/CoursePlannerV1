@@ -1,5 +1,7 @@
 package ca.courseplannerv1.model;
 
+import ca.courseplannerv1.controllers.CoursePlannerController;
+
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -101,6 +103,17 @@ public class Course {
         String thisNum = this.catalogNumber;
 
         return myModel.compareString(thisNum, otherNum);
+    }
+
+    //find CourseOffering by courseOfferingId
+    public CourseOffering findCourseOffering(long courseOfferingid) {
+        for(CourseOffering courseOffering : courseOfferings) {
+            if(courseOffering.getCourseOfferingId() == courseOfferingid) {
+                return courseOffering;
+            }
+        }
+
+        throw new CoursePlannerController.CourseOfferingNotFoundException(courseOfferingid);
     }
 
     public void printOfferings() {
