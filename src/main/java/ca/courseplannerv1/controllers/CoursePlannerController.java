@@ -15,5 +15,6 @@ public class CoursePlannerController {
     @GetMapping("/dump-model")
     public void dumpModel() {
         myModel.dumpModel();
+        myModel.dumpModelToFile();
     }
 }

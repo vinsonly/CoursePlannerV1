@@ -3,6 +3,10 @@ package ca.courseplannerv1.model;
 import ca.courseplannerv1.CSVParser;
 
 import javax.validation.constraints.Null;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 
 //has many departments
@@ -268,7 +272,7 @@ public class myModel {
                         System.out.print(instructor);
                         instructorCount++;
                         if(instructorCount != offering.getInstructors().size()) {
-                            System.out.print(",");
+                            System.out.print(", ");
                         }
                     }
 
@@ -281,11 +285,26 @@ public class myModel {
                     }
 
                 }
-                System.out.println();
             }
         }
 
+    }
 
+    //dumps the model into console
+    public static void dumpModelToFile() {
+
+        try {
+
+            System.setOut(new PrintStream(new FileOutputStream("data/output_dump.txt")));
+
+            dumpModel();
+
+
+
+        } catch (FileNotFoundException exception) {
+            System.out.println("Error, file not found.");
+            exception.printStackTrace();
+        }
     }
 
 

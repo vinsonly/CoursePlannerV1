@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class Application {
     public static void main(String[] args) {
-//        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Application.class, args);
 
         //parse \data\course_data_2018.csv into our system.
         CSVParser.readCSV();
@@ -18,7 +18,8 @@ public class Application {
 //        myModel.departments.get(1).printCourses();
 //        myModel.departments.get(1).getCourses().get(1).printOfferings();
 //        myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).printSections();
-        myModel.dumpModel();
+//        myModel.dumpModel();
+//        myModel.dumpModelToFile();
 
     }
 }
