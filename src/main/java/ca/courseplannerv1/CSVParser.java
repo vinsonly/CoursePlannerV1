@@ -28,12 +28,10 @@ public class CSVParser {
 
 
         String currentLine;
-        int wordCount = 0;
         int lineCounter = 0;
 
         //boolean that determines whether there are multiple strings that need to be divided in this field
         //multistrings are indicated by "
-        boolean isMultiString = false;
 
         try {
 
@@ -50,54 +48,59 @@ public class CSVParser {
                 }
 
                 lineCounter++;
+
                 currentLine = scanner.nextLine();
 
-                String text = new String();
-                String[] line = new String[8];
+                String[] line = lineToStringArray(currentLine);
 
-//                split the string up divided by ","
-                for(i = 0; i < currentLine.length(); i++) {
-
-                    if(currentLine.charAt(i) == ',' && (isMultiString == false)) {
-
-                        text = text.trim();
-
-                        //save the text into line
-                        line[wordCount] = text;
-
-                        //increment wordCount
-                        wordCount++;
-
-                        //reset text
-                        text = new String();
-
-                    //check if this is a start or end of a multi string
-                    } else if(currentLine.charAt(i) == '"') {
-
-                        isMultiString = !isMultiString;
-
-                    //check if this character is the last character in the line
-                    } else if(i == (currentLine.length() - 1)) {
-                        //save the character into text
-                        text = text + currentLine.charAt(i);
-
-                        text = text.trim();
-
-                        //save the text into line
-                        line[wordCount] = text;
-
-                        //reset wordCount
-                        wordCount = 0;
-
-                        //reset text
-                        text = new String();
-                    }
-                    else {
-                        //save the character into text
-                        text = text + currentLine.charAt(i);
-                    }
-
-                }
+//                String text = new String();
+//                String[] line = new String[8];
+//                int wordCount = 0;
+//                boolean isMultiString = false;
+//
+////                split the string up divided by ","
+//                for(i = 0; i < currentLine.length(); i++) {
+//
+//                    if(currentLine.charAt(i) == ',' && (isMultiString == false)) {
+//
+//                        text = text.trim();
+//
+//                        //save the text into line
+//                        line[wordCount] = text;
+//
+//                        //increment wordCount
+//                        wordCount++;
+//
+//                        //reset text
+//                        text = new String();
+//
+//                    //check if this is a start or end of a multi string
+//                    } else if(currentLine.charAt(i) == '"') {
+//
+//                        isMultiString = !isMultiString;
+//
+//                    //check if this character is the last character in the line
+//                    } else if(i == (currentLine.length() - 1)) {
+//                        //save the character into text
+//                        text = text + currentLine.charAt(i);
+//
+//                        text = text.trim();
+//
+//                        //save the text into line
+//                        line[wordCount] = text;
+//
+//                        //reset wordCount
+//                        wordCount = 0;
+//
+//                        //reset text
+//                        text = new String();
+//                    }
+//                    else {
+//                        //save the character into text
+//                        text = text + currentLine.charAt(i);
+//                    }
+//
+//                }
 
 
                 //save the current line into myModel
@@ -116,6 +119,63 @@ public class CSVParser {
         }
 
     }
+
+    //convert a single string currentLine into a string array by dividing the string up, using the comma has a delimiter
+    public static String[] lineToStringArray(String currentLine) {
+        String text = new String();
+        String[] line = new String[8];
+        int wordCount = 0;
+        boolean isMultiString = false;
+
+
+//                split the string up divided by ","
+        for(int i = 0; i < currentLine.length(); i++) {
+
+            if(currentLine.charAt(i) == ',' && (isMultiString == false)) {
+
+                text = text.trim();
+
+                //save the text into line
+                line[wordCount] = text;
+
+                //increment wordCount
+                wordCount++;
+
+                //reset text
+                text = new String();
+
+                //check if this is a start or end of a multi string
+            } else if(currentLine.charAt(i) == '"') {
+
+                isMultiString = !isMultiString;
+
+                //check if this character is the last character in the line
+            } else if(i == (currentLine.length() - 1)) {
+                //save the character into text
+                text = text + currentLine.charAt(i);
+
+                text = text.trim();
+
+                //save the text into line
+                line[wordCount] = text;
+
+                //reset wordCount
+                wordCount = 0;
+
+                //reset text
+                text = new String();
+            }
+            else {
+                //save the character into text
+                text = text + currentLine.charAt(i);
+            }
+
+        }
+
+        return line;
+
+    }
+
 
 
 

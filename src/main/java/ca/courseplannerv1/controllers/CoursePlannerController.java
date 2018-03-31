@@ -1,12 +1,18 @@
 package ca.courseplannerv1.controllers;
 
+import ca.courseplannerv1.CSVParser;
 import ca.courseplannerv1.model.*;
+import com.google.gson.Gson;
+import org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Enumeration;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -95,6 +101,24 @@ public class CoursePlannerController {
 
         return sectionLites;
 
+    }
+
+    //Add a new section to the data stored by the system.
+    @PostMapping("/api/addoffering")
+    @ResponseStatus(HttpStatus.CREATED)
+    public CourseSectionLite addOffering(@RequestBody String lineJson){
+
+        Gson gson = new Gson();
+
+        Line newLine = gson.fromJson(lineJson, Line.class);
+
+        String[] lineArray = newLine.toStringArray();
+
+        myModel.saveLineIntoSystem(lineArray);
+
+        CourseSectionLite newCourseSectionLite = new CourseSectionLite(newLine.getComponent(), Integer.valueOf(newLine.getEnrollmentTotal()), Integer.valueOf(newLine.getEnrollmentCap()));
+
+        return newCourseSectionLite;
     }
 
 
