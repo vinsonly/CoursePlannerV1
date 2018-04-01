@@ -1,7 +1,11 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.model.system;
 
+
+import ca.courseplannerv1.model.list.CourseSectionList;
+import ca.courseplannerv1.model.watchers.Observer;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class CourseOffering {
@@ -14,20 +18,22 @@ public class CourseOffering {
     private Semester sem;
     private String location;
     private ArrayList<String> instructors;
-    private ArrayList<CourseSection> courseSections;    // all CourseSections for particular CourseOffering
+    private CourseSectionList courseSections;
+                                                        // all CourseSections for particular CourseOffering
                                                         // stored in sorted order, by type, instructors
                                                         // one unique courseSection per type
+
     //default constructor
     public CourseOffering() {
         this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.location = new String();
-        this.courseSections = new ArrayList<>(courseSections);
+        this.courseSections = new CourseSectionList();
         this.instructors = new ArrayList<String>();
         courseOfferingCount++;
     }
 
     //parameterized constructor
-    public CourseOffering(Semester sem, String location, ArrayList<String> instructors, ArrayList<CourseSection> courseSections) {
+    public CourseOffering(Semester sem, String location, ArrayList<String> instructors, CourseSectionList courseSections) {
         this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.sem = sem;
         this.location = location;
@@ -38,12 +44,11 @@ public class CourseOffering {
 
     //parametrized contrusctor
     public CourseOffering(Semester sem, String location, ArrayList<String> instructors, CourseSection section) {
-        ArrayList<CourseSection> sections = new ArrayList<>();
-        sections.add(section);
+        this.courseSections = new CourseSectionList();
+        this.courseSections.insert(section);
         this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.sem = sem;
         this.location = location;
-        this.courseSections = sections;
         this.instructors = instructors;
         courseOfferingCount++;
     }
@@ -55,23 +60,39 @@ public class CourseOffering {
     }
 
     //insert section into courseSections, in sorted order.
-    //returns true if successful, false otherwise.
-    public boolean insertCourseSection(CourseSection section) {
-        //find if this section already exists.
-        //if the section already exists, return false;
+    public void insertCourseSection(CourseSection section) {
+        courseSections.insertSorted(section);
+        insertInstructors(section.getInstructors());
+    }
 
-        int currentIndex = 0;
-        for(CourseSection savedSection : courseSections) {
-            if(savedSection.getType().equals(section.getType())) {
-                return false;
+    //insert instructor, in sorted order, no duplicates
+    public void insertInstructors(ArrayList<String> newInstructors) {
+        boolean duplicate = false;
+        for(String newInstructor : newInstructors) {
+            int currentIndex = 0;
+            for(String savedInstructor : this.instructors) {
+                if(newInstructor.equals(savedInstructor)) {
+                    break;
+                }
+
+                if(myModel.compareString(newInstructor, savedInstructor)) {
+                    this.instructors.add(currentIndex, newInstructor);
+                    break;
+                }
+                else {
+                    currentIndex++;
+                }
             }
-            if(section.lessThan(savedSection)) {
-                courseSections.add(currentIndex, section);
-                return true;
-            }
+
+            this.instructors.add(newInstructor);
         }
-        courseSections.add(section);
-        return true;
+    }
+
+
+
+    //returns true if the location and semesters are the same for both the courseOfferings, otherwise returns false.
+    public boolean isEqual(CourseOffering otherCourseOffering) {
+        return this.getLocation().equals(otherCourseOffering.getLocation()) && this.sem.getSemCode() == otherCourseOffering.getSem().getSemCode();
     }
 
     //compare semesterCode and location
@@ -100,6 +121,19 @@ public class CourseOffering {
     public void printSections() {
         for(CourseSection savedSection : courseSections) {
             System.out.println(savedSection.getType());
+        }
+    }
+
+    //make observable
+    private List<Observer> observers = new ArrayList<>();
+
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    private void notifyObservers() {
+        for(Observer observer : observers) {
+            observer.stateChanged();
         }
     }
 
@@ -135,11 +169,11 @@ public class CourseOffering {
         this.location = location;
     }
 
-    public ArrayList<CourseSection> getCourseSections() {
+    public CourseSectionList getCourseSections() {
         return courseSections;
     }
 
-    public void setCourseSections(ArrayList<CourseSection> courseSections) {
+    public void setCourseSections(CourseSectionList courseSections) {
         this.courseSections = courseSections;
     }
 }

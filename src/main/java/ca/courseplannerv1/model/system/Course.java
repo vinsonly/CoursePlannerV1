@@ -1,8 +1,11 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.model.system;
 
 import ca.courseplannerv1.controllers.CoursePlannerController;
+import ca.courseplannerv1.model.list.CourseOfferingList;
+import ca.courseplannerv1.model.watchers.Observer;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 //each course contains an array of arraylists, which each arraylist corresponding to a course offering at a campus
@@ -21,7 +24,7 @@ public class Course {
     //Each courseOffering has a unique location and semester pairing
     //one courseOffering for each
     //stored in sorted order by semesterCode and location
-    private ArrayList<CourseOffering> courseOfferings;
+    private CourseOfferingList courseOfferings;
 
     //default constructor
     public Course() {
@@ -29,12 +32,12 @@ public class Course {
         this.deptName = new String();
         this.catalogNumber = new String();
         this.locations = new ArrayList<>();
-        this.courseOfferings = new ArrayList<>();
+        this.courseOfferings = new CourseOfferingList();
         courseCount++;
     }
 
     //parametrized constructor
-    public Course(String deptName, String catalogNumber, ArrayList<String> locations, ArrayList<CourseOffering> courseOfferings) {
+    public Course(String deptName, String catalogNumber, ArrayList<String> locations, CourseOfferingList courseOfferings) {
         this.courseId = getAndIncrementCourseId();
         this.deptName = deptName;
         this.catalogNumber = catalogNumber;
@@ -47,53 +50,23 @@ public class Course {
     public Course(String deptName, String catalogNumber, String location, CourseOffering courseOffering) {
         ArrayList<String> locations = new ArrayList<>();
         locations.add(location);
-        ArrayList<CourseOffering> offerings = new ArrayList<>();
-        offerings.add(courseOffering);
+        this.courseOfferings = new CourseOfferingList();
+        this.courseOfferings.insert(courseOffering);
         this.courseId = getAndIncrementCourseId();
         this.deptName = deptName;
         this.catalogNumber = catalogNumber;
         this.locations = locations;
-        this.courseOfferings = offerings;
         courseCount++;
     }
 
     //insert courseOffering into courseOfferings, in sorted order.
-    //returns true if successful, false otherwise.
-    public boolean insertNewCourseOffering(CourseOffering courseOffering) {
-        boolean added = false;
-        boolean found = false;
+    public void insertNewCourseOffering(CourseOffering courseOffering) {
+        courseOfferings.insertSorted(courseOffering);
+    }
 
-        if(courseOfferings.size() == 0) {
-            courseOfferings.add(courseOffering);
-            return added = true;
-        }
-
-        for(CourseOffering offering : this.courseOfferings) {
-            //check if a courseOffering at the same location, during the same semester is present, if false, insert, else don't
-            if (courseOffering.getLocation().equals(offering.getLocation()) && courseOffering.getSem().getSemCode() == offering.getSem().getSemCode()) {
-                found = true;
-                break;
-            }
-        }
-
-        if(found == false) {
-            int currentIndex = 0;
-            for(CourseOffering savedOffering : courseOfferings) {
-                if(courseOffering.lessThan(savedOffering)) {
-                    courseOfferings.add(currentIndex, courseOffering);
-                    locations.add(currentIndex, courseOffering.getLocation());
-                    return added = true;
-                }
-                else {
-                    currentIndex++;
-                }
-            }
-
-            courseOfferings.add(courseOffering);
-            locations.add(courseOffering.getLocation());
-            return added = true;
-        }
-        return added;
+    //returns true if the catalogNumbers for both of the course are equal, otherwise return false
+    public boolean isEqual(Course otherCourse) {
+        return this.catalogNumber.equals(otherCourse.getCatalogNumber());
     }
 
     //compares the catalogNumbers
@@ -119,6 +92,30 @@ public class Course {
     public void printOfferings() {
         for(CourseOffering offering : courseOfferings) {
             System.out.println(offering.getSem().getSemCode() + ", " + offering.getLocation());
+        }
+    }
+
+    private void registerAsObserver() {
+        courseOfferings.addObserver(new Observer() {
+            @Override
+            public void stateChanged() {
+
+                notifyObservers();
+
+            }
+        });
+    }
+
+    //make observable
+    private List<Observer> observers = new ArrayList<>();
+
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    private void notifyObservers() {
+        for(Observer observer : observers) {
+            observer.stateChanged();
         }
     }
 
@@ -157,11 +154,11 @@ public class Course {
         this.locations = locations;
     }
 
-    public ArrayList<CourseOffering> getCourseOfferings() {
+    public CourseOfferingList getCourseOfferings() {
         return courseOfferings;
     }
 
-    public void setCourseOfferings(ArrayList<CourseOffering> courseOfferings) {
+    public void setCourseOfferings(CourseOfferingList courseOfferings) {
         this.courseOfferings = courseOfferings;
     }
 }

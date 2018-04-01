@@ -2,7 +2,8 @@ package ca.courseplannerv1;
 
 //responsible for parsing a CSV file into our system
 
-import ca.courseplannerv1.model.*;
+import ca.courseplannerv1.model.system.CourseSection;
+import ca.courseplannerv1.model.system.myModel;
 
 import java.io.File;
 import java.io.FileNotFoundException;

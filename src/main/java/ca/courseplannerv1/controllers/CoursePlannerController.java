@@ -1,21 +1,15 @@
 package ca.courseplannerv1.controllers;
 
-import ca.courseplannerv1.CSVParser;
-import ca.courseplannerv1.model.*;
+import ca.courseplannerv1.view.*;
+import ca.courseplannerv1.model.system.*;
 import com.google.gson.Gson;
-import org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Enumeration;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class CoursePlannerController {
@@ -37,12 +31,12 @@ public class CoursePlannerController {
     //Access Departments, Courses, Offerings, and Sections
     @GetMapping("/api/departments")
     //list of all departments
-    public List<DepartmentLite> getDepartments() {
+    public List<DepartmentUI> getDepartments() {
 
-        ArrayList<DepartmentLite> deptLites = new ArrayList<>();
+        ArrayList<DepartmentUI> deptLites = new ArrayList<>();
 
-        for(Department savedDepartment : myModel.departments) {
-            DepartmentLite newDeptLite = new DepartmentLite(savedDepartment.getDeptId(), savedDepartment.getDeptName());
+        for(Department savedDepartment : myModel.departmentList) {
+            DepartmentUI newDeptLite = new DepartmentUI(savedDepartment.getDeptId(), savedDepartment.getDeptName());
             deptLites.add(newDeptLite);
         }
         return deptLites;
@@ -50,55 +44,55 @@ public class CoursePlannerController {
 
     //List all courses with the given deptId
     @GetMapping("/api/departments/{deptId}/courses")
-    public List<CourseLite> getCourses(@PathVariable("deptId") long deptId) {
+    public List<CourseUI> getCourses(@PathVariable("deptId") long deptId) {
 
-        Department foundDepartment = myModel.findDepartment(deptId);
+        Department foundDepartment = myModel.findDepartmentById(deptId);
 
-        ArrayList<CourseLite> courseLites = new ArrayList<>();
+        ArrayList<CourseUI> courseUIS = new ArrayList<>();
 
         for(Course savedCourse : foundDepartment.getCourses()) {
-            CourseLite newCourseLite = new CourseLite(savedCourse.getCourseId(), savedCourse.getCatalogNumber());
-            courseLites.add(newCourseLite);
+            CourseUI newCourseUI = new CourseUI(savedCourse.getCourseId(), savedCourse.getCatalogNumber());
+            courseUIS.add(newCourseUI);
         }
 
-        return courseLites;
+        return courseUIS;
 
     }
 
     //List the offerings of the course with courseID inside department with deptId
     @GetMapping("/api/departments/{deptId}/courses/{courseId}/offerings")
-    public List<CourseOfferingLite> getOfferings(@PathVariable("deptId") long deptId, @PathVariable("courseId") long courseId) {
+    public List<CourseOfferingUI> getOfferings(@PathVariable("deptId") long deptId, @PathVariable("courseId") long courseId) {
 
-        Department foundDepartment = myModel.findDepartment(deptId);
+        Department foundDepartment = myModel.findDepartmentById(deptId);
 
         Course foundCourse = foundDepartment.findCourse(courseId);
 
-        CourseLite thisCourseLite = new CourseLite(foundCourse.getCourseId(), foundCourse.getCatalogNumber());
+        CourseUI thisCourseUI = new CourseUI(foundCourse.getCourseId(), foundCourse.getCatalogNumber());
 
-        ArrayList<CourseOfferingLite> courseOfferingLites = new ArrayList<>();
+        ArrayList<CourseOfferingUI> courseOfferingUIS = new ArrayList<>();
 
         for(CourseOffering courseOffering : foundCourse.getCourseOfferings()) {
-            CourseOfferingLite thisCourseOfferingLite = new CourseOfferingLite(courseOffering, thisCourseLite);
-            courseOfferingLites.add(thisCourseOfferingLite);
+            CourseOfferingUI thisCourseOfferingUI = new CourseOfferingUI(courseOffering, thisCourseUI);
+            courseOfferingUIS.add(thisCourseOfferingUI);
         }
 
-        return courseOfferingLites;
+        return courseOfferingUIS;
     }
 
     //Return the list of sections for offering with courseOfferingID, in course with courseId, in department with deptId
     @GetMapping("/api/departments/{deptId}/courses/{courseId}/offerings/{courseOfferingId}")
-    public List<CourseSectionLite> getSections(@PathVariable("deptId") long deptId, @PathVariable("courseId") long courseId, @PathVariable("courseOfferingId") long courseOfferingId) {
-        Department foundDepartment = myModel.findDepartment(deptId);
+    public List<CourseSectionUI> getSections(@PathVariable("deptId") long deptId, @PathVariable("courseId") long courseId, @PathVariable("courseOfferingId") long courseOfferingId) {
+        Department foundDepartment = myModel.findDepartmentById(deptId);
 
         Course foundCourse = foundDepartment.findCourse(courseId);
 
         CourseOffering foundCourseOffering = foundCourse.findCourseOffering(courseOfferingId);
 
-        ArrayList<CourseSectionLite> sectionLites = new ArrayList<>();
+        ArrayList<CourseSectionUI> sectionLites = new ArrayList<>();
 
         for(CourseSection savedSection : foundCourseOffering.getCourseSections()) {
-            CourseSectionLite newCourseSectionLite = new CourseSectionLite(savedSection);
-            sectionLites.add(newCourseSectionLite);
+            CourseSectionUI newCourseSectionUI = new CourseSectionUI(savedSection);
+            sectionLites.add(newCourseSectionUI);
         }
 
         return sectionLites;
@@ -108,7 +102,7 @@ public class CoursePlannerController {
     //Add a new section to the data stored by the system.
     @PostMapping("/api/addoffering")
     @ResponseStatus(HttpStatus.CREATED)
-    public CourseSectionLite addOffering(@RequestBody String lineJson){
+    public CourseSectionUI addOffering(@RequestBody String lineJson){
 
         Gson gson = new Gson();
 
@@ -118,9 +112,9 @@ public class CoursePlannerController {
 
         myModel.saveLineIntoSystem(lineArray);
 
-        CourseSectionLite newCourseSectionLite = new CourseSectionLite(newLine.getComponent(), Integer.valueOf(newLine.getEnrollmentTotal()), Integer.valueOf(newLine.getEnrollmentCap()));
+        CourseSectionUI newCourseSectionUI = new CourseSectionUI(newLine.getComponent(), Integer.valueOf(newLine.getEnrollmentTotal()), Integer.valueOf(newLine.getEnrollmentCap()));
 
-        return newCourseSectionLite;
+        return newCourseSectionUI;
     }
 
 

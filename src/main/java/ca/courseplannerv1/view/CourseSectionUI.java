@@ -1,20 +1,22 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.view;
 
-public class CourseSectionLite {
+import ca.courseplannerv1.model.system.CourseSection;
+
+public class CourseSectionUI {
     private String type;
     private int enrollmentCap;
     private int enrollmentTotal;
 
-    public CourseSectionLite() {
+    public CourseSectionUI() {
     }
 
-    public CourseSectionLite(String type, int enrollmentTotal, int enrollmentCap) {
+    public CourseSectionUI(String type, int enrollmentTotal, int enrollmentCap) {
         this.type = type;
         this.enrollmentCap = enrollmentCap;
         this.enrollmentTotal = enrollmentTotal;
     }
 
-    public CourseSectionLite(CourseSection courseSection) {
+    public CourseSectionUI(CourseSection courseSection) {
         this.type = courseSection.getType();
         this.enrollmentCap = courseSection.getEnrolmentCapacity();
         this.enrollmentTotal = courseSection.getEnrolmentTotal();

@@ -1,4 +1,4 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.model.system;
 
 import java.util.ArrayList;
 

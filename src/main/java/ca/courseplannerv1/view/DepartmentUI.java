@@ -1,18 +1,20 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.view;
 
-public class DepartmentLite {
+import ca.courseplannerv1.model.system.Department;
+
+public class DepartmentUI {
     private long deptId;
     private String name;
 
-    public DepartmentLite() {
+    public DepartmentUI() {
     }
 
-    public DepartmentLite(long deptId, String name) {
+    public DepartmentUI(long deptId, String name) {
         this.deptId = deptId;
         this.name = name;
     }
 
-    public DepartmentLite(Department department) {
+    public DepartmentUI(Department department) {
         this.deptId = department.getDeptId();
         this.name = department.getDeptName();
     }

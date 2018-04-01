@@ -1,6 +1,8 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.model.system;
 
 import ca.courseplannerv1.controllers.CoursePlannerController;
+import ca.courseplannerv1.model.list.DepartmentList;
+import ca.courseplannerv1.model.watchers.Observer;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,31 +14,16 @@ public class myModel {
     public static int insertions = 0;
 
     //ArrayList of departments, in sorted ascending alphabetical order of deptName
-    public static ArrayList<Department> departments = new ArrayList<>();
+//    public static ArrayList<Department> departments = new ArrayList<>();
+
+    public static DepartmentList departmentList = new DepartmentList();
+
+    //list of observers
+    private ArrayList<Observer> observers = new ArrayList<Observer>();
 
     //insert new department into departments, in sorted ascending alphabetical order of deptName
-    //returns true if successful, false otherwise.
-    private static boolean insertNewDepartment(Department department) {
-        boolean added = false;
-        //if this.departments is empty, add
-        if(departments.size() == 0) {
-            myModel.departments.add(department);
-            return added = true;
-        }
-
-        int currentIndex = 0;
-        for(Department thisDept : myModel.departments) {
-            if(department.lessThan(thisDept)) {
-                myModel.departments.add(currentIndex, department);
-                return added = true;
-            }
-            else {
-                currentIndex++;
-            }
-        }
-
-        myModel.departments.add(department);
-        return added = true;
+    private static void insertNewDepartment(Department department) {
+        departmentList.insertSorted(department);
     }
 
     //precondition: line contains 8 strings
@@ -121,9 +108,9 @@ public class myModel {
 
     //return the Department if a department with the deptName already exists, else returns false.
     private static Department findDep(String deptName) {
-        for(Department dep : departments) {
-            if(dep.getDeptName().equals(deptName)) {
-                return dep;
+        for(Department dept : departmentList) {
+            if(dept.getDeptName().equals(deptName)) {
+                return dept;
             }
         }
         return null;
@@ -175,25 +162,25 @@ public class myModel {
 
     //prints random information from the model to test the data that is being inputted
     public static void printModelInfo() {
-        System.out.println("myModel.insertions = " + myModel.insertions);
-        System.out.println("CourseSubSection.subSectionCount = " + CourseSubSection.subSectionCount);
-        System.out.println("CourseSection.sectionCount = " + CourseSection.sectionCount);
-        System.out.println("CourseOffering.courseOfferingCount = " + CourseOffering.courseOfferingCount);
-        System.out.println("Course.courseCount = " + Course.courseCount);
-        System.out.println("Department.departmentCount = " + Department.departmentCount);
-        System.out.println("myModel.departments.size() = " + myModel.departments.size());
-        System.out.println("myModel.departments.get(1).getDeptName() = " + myModel.departments.get(1).getDeptName());
-        System.out.println("myModel.departments.get(1).getCourses().size() = " + myModel.departments.get(1).getCourses().size());
-        System.out.println("myModel.departments.get(1).getCourses().get(1).getCatalogNumber() = " + myModel.departments.get(1).getCourses().get(1).getCatalogNumber());
-        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size());
-        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation());
-        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation());
-        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size());
+//        System.out.println("myModel.insertions = " + myModel.insertions);
+//        System.out.println("CourseSubSection.subSectionCount = " + CourseSubSection.subSectionCount);
+//        System.out.println("CourseSection.sectionCount = " + CourseSection.sectionCount);
+//        System.out.println("CourseOffering.courseOfferingCount = " + CourseOffering.courseOfferingCount);
+//        System.out.println("Course.courseCount = " + Course.courseCount);
+//        System.out.println("Department.departmentCount = " + Department.departmentCount);
+//        System.out.println("myModel.departments.size() = " + myModel.departments.size());
+//        System.out.println("myModel.departments.get(1).getDeptName() = " + myModel.departments.get(1).getDeptName());
+//        System.out.println("myModel.departments.get(1).getCourses().size() = " + myModel.departments.get(1).getCourses().size());
+//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCatalogNumber() = " + myModel.departments.get(1).getCourses().get(1).getCatalogNumber());
+//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size());
+//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation());
+//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation());
+//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size());
     }
 
     //prints all the departments in the model
     public static void printDepartments() {
-        for(Department department : departments) {
+        for(Department department : departmentList) {
             System.out.println(department.getDeptName());
         }
     }
@@ -248,8 +235,8 @@ public class myModel {
     }
 
     //find department given deptID
-    public static Department findDepartment(long deptID) {
-        for(Department thisDept : departments) {
+    public static Department findDepartmentById(long deptID) {
+        for(Department thisDept : departmentList) {
             if(thisDept.getDeptId() == deptID) {
                 return thisDept;
             }
@@ -264,7 +251,7 @@ public class myModel {
         String tab = "      ";
 
         //loop through each department
-        for(Department department : myModel.departments){
+        for(Department department : departmentList){
 
             //loop through each course
             for(Course course : department.getCourses()) {
@@ -304,11 +291,13 @@ public class myModel {
 
         try {
 
+            PrintStream stdout = System.out;
+
             System.setOut(new PrintStream(new FileOutputStream("data/output_dump.txt")));
 
             dumpModel();
 
-
+            System.setOut(stdout);
 
         } catch (FileNotFoundException exception) {
             System.out.println("Error, file not found.");

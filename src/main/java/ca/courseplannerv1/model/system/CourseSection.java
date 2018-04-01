@@ -1,6 +1,10 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.model.system;
+
+import ca.courseplannerv1.model.list.CourseSubSectionList;
+import ca.courseplannerv1.model.watchers.Observer;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 //A course section that aggregates the instructors, enrolment capacities, and enrolment totals
@@ -17,7 +21,7 @@ public class CourseSection {
     private int enrolmentTotal;
     private ArrayList<String> instructors;          // instructor(s) that are teaching this section
     private String type;                            // component code (eg: LEC, SEM, TUT)
-    private ArrayList<CourseSubSection> subSections;// the individual classes that are in this section
+    private CourseSubSectionList subSections;       // the individual classes that are in this section
 
     //default constructor
     public CourseSection() {
@@ -27,7 +31,7 @@ public class CourseSection {
         this.enrolmentCapacity = 0;
         this.enrolmentTotal = 0;
         this.type = new String();
-        this.subSections = new ArrayList<>();
+        this.subSections = new CourseSubSectionList();
     }
 
     //parameterized constructor
@@ -47,8 +51,8 @@ public class CourseSection {
         this.enrolmentCapacity = subSection.getEnrolmentCapacity();
         this.enrolmentTotal = subSection.getEnrolmentTotal();
         this.type = subSection.getType();
-        this.subSections = new ArrayList<>();
-        this.subSections.add(subSection);
+        this.subSections = new CourseSubSectionList();
+        this.subSections.insert(subSection);
         sectionCount++;
     }
 
@@ -59,13 +63,13 @@ public class CourseSection {
 
     //insert section into courseSections, in sorted order.
     //returns true if successful, false otherwise.
-    public boolean insertCourseSubSection(CourseSubSection subSection) {
+    public void insertCourseSubSection(CourseSubSection subSection) {
 
         if(this.type.equals(subSection.getType()) == false) {
-            return false;
+            return;
         }
 
-        this.subSections.add(subSection);
+        this.subSections.insert(subSection);
         this.enrolmentCapacity += subSection.getEnrolmentCapacity();
         this.enrolmentTotal += subSection.getEnrolmentTotal();
 
@@ -86,7 +90,12 @@ public class CourseSection {
             }
         }
 
-        return true;
+        return;
+    }
+
+    //returns true of both types of the sections are same, otherwise false.
+    public boolean isEqual(CourseSection otherSection) {
+        return this.type.equals(otherSection.getType());
     }
 
     // precondition: thisType is not equal to otherSection.getType()
@@ -101,6 +110,30 @@ public class CourseSection {
 
         return myModel.compareString(thisType, otherType);
     }
+
+    private void registerAsObserver() {
+        subSections.addObserver(new Observer() {
+            @Override
+            public void stateChanged() {
+
+                notifyObservers();
+            }
+        });
+    }
+
+    //make observable
+    private List<Observer> observers = new ArrayList<>();
+
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    private void notifyObservers() {
+        for(Observer observer : observers) {
+            observer.stateChanged();
+        }
+    }
+
 
     public long getCourseSectionId() {
         return courseSectionId;

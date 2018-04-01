@@ -1,18 +1,20 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.view;
 
-public class CourseLite {
+import ca.courseplannerv1.model.system.Course;
+
+public class CourseUI {
     private long courseId;
     private String catalogNumber;
 
-    public CourseLite() {
+    public CourseUI() {
     }
 
-    public CourseLite(long courseId, String catalogNumber) {
+    public CourseUI(long courseId, String catalogNumber) {
         this.courseId = courseId;
         this.catalogNumber = catalogNumber;
     }
 
-    public CourseLite(Course course) {
+    public CourseUI(Course course) {
         this.courseId = course.getCourseId();
         this.catalogNumber = course.getCatalogNumber();
     }

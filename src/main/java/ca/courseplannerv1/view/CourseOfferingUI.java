@@ -1,20 +1,23 @@
-package ca.courseplannerv1.model;
+package ca.courseplannerv1.view;
+
+import ca.courseplannerv1.model.system.CourseOffering;
+import ca.courseplannerv1.model.system.Semester;
 
 import java.util.ArrayList;
 
-public class CourseOfferingLite {
+public class CourseOfferingUI {
     private long courseOfferingId;
-    private CourseLite course;
+    private CourseUI course;
     private String location;
     private String instructors;
     private Semester.Sem term;
     private int semesterCode;
     private int year;
 
-    public CourseOfferingLite() {
+    public CourseOfferingUI() {
     }
 
-    public CourseOfferingLite(long courseOfferingId, CourseLite course, String location, String instructors, Semester.Sem term, int semesterCode, int year) {
+    public CourseOfferingUI(long courseOfferingId, CourseUI course, String location, String instructors, Semester.Sem term, int semesterCode, int year) {
         this.courseOfferingId = courseOfferingId;
         this.course = course;
         this.location = location;
@@ -24,9 +27,9 @@ public class CourseOfferingLite {
         this.year = year;
     }
 
-    public CourseOfferingLite(CourseOffering courseOffering, CourseLite courseLite) {
+    public CourseOfferingUI(CourseOffering courseOffering, CourseUI courseUI) {
         this.courseOfferingId = courseOffering.getCourseOfferingId();
-        this.course = courseLite;
+        this.course = courseUI;
         this.location = courseOffering.getLocation();
         this.instructors = arrayListToString(courseOffering.getInstructors());
         this.term = courseOffering.getSem().getSem();
@@ -43,11 +46,11 @@ public class CourseOfferingLite {
         this.courseOfferingId = courseOfferingId;
     }
 
-    public CourseLite getCourse() {
+    public CourseUI getCourse() {
         return course;
     }
 
-    public void setCourse(CourseLite course) {
+    public void setCourse(CourseUI course) {
         this.course = course;
     }
 
