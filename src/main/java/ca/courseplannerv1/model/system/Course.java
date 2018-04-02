@@ -3,6 +3,7 @@ package ca.courseplannerv1.model.system;
 import ca.courseplannerv1.controllers.CoursePlannerController;
 import ca.courseplannerv1.model.list.CourseOfferingList;
 import ca.courseplannerv1.model.watchers.Observer;
+import ca.courseplannerv1.model.watchers.WatcherInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +52,7 @@ public class Course {
         ArrayList<String> locations = new ArrayList<>();
         locations.add(location);
         this.courseOfferings = new CourseOfferingList();
-        this.courseOfferings.insert(courseOffering);
+        insertNewCourseOffering(courseOffering);
         this.courseId = getAndIncrementCourseId();
         this.deptName = deptName;
         this.catalogNumber = catalogNumber;
@@ -62,6 +63,7 @@ public class Course {
     //insert courseOffering into courseOfferings, in sorted order.
     public void insertNewCourseOffering(CourseOffering courseOffering) {
         courseOfferings.insertSorted(courseOffering);
+        registerAsObserver(courseOffering);
     }
 
     //returns true if the catalogNumbers for both of the course are equal, otherwise return false
@@ -92,30 +94,6 @@ public class Course {
     public void printOfferings() {
         for(CourseOffering offering : courseOfferings) {
             System.out.println(offering.getSem().getSemCode() + ", " + offering.getLocation());
-        }
-    }
-
-    private void registerAsObserver() {
-        courseOfferings.addObserver(new Observer() {
-            @Override
-            public void stateChanged() {
-
-                notifyObservers();
-
-            }
-        });
-    }
-
-    //make observable
-    private List<Observer> observers = new ArrayList<>();
-
-    public void addObserver(Observer observer) {
-        observers.add(observer);
-    }
-
-    private void notifyObservers() {
-        for(Observer observer : observers) {
-            observer.stateChanged();
         }
     }
 
@@ -161,4 +139,30 @@ public class Course {
     public void setCourseOfferings(CourseOfferingList courseOfferings) {
         this.courseOfferings = courseOfferings;
     }
+
+    //register as an observer
+    private void registerAsObserver(CourseOffering courseOffering) {
+        courseOffering.addObserver(new Observer() {
+            @Override
+            public void stateChanged(Object obj) {
+                System.out.println("Course stateChanged.");
+                WatcherInfo watcherInfo = WatcherInfo.class.cast(obj);
+                notifyObservers(watcherInfo);
+            }
+        });
+    }
+
+    //make observable
+    private List<Observer> observers = new ArrayList<>();
+
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    private void notifyObservers(Object obj) {
+        for(Observer observer : observers) {
+            observer.stateChanged(obj);
+        }
+    }
+
 }

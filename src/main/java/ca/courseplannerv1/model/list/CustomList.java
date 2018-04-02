@@ -16,13 +16,13 @@ public abstract class CustomList<T> implements Iterable<T>{
     //insert new obj to end of list
     public void insert(T obj) {
         list.add(obj);
-        notifyObservers();
+        notifyObservers(obj);
         this.numElements++;
     }
 
     public void insert(int index, T obj) {
         list.add(index, obj);
-        notifyObservers();
+        notifyObservers(obj);
         this.numElements++;
     }
 
@@ -84,17 +84,11 @@ public abstract class CustomList<T> implements Iterable<T>{
     }
 
     protected void notifyObservers(T obj) {
+        System.out.println("CourseSubSectionList notifying observers.");
         for(Observer observer : observers) {
-            observer.stateChanged();
+            observer.stateChanged(obj);
         }
     }
-
-    protected void notifyObservers() {
-        for(Observer observer : observers) {
-            observer.stateChanged();
-        }
-    }
-
 
 
 }

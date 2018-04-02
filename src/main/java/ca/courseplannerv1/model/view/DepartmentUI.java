@@ -1,4 +1,4 @@
-package ca.courseplannerv1.view;
+package ca.courseplannerv1.model.view;
 
 import ca.courseplannerv1.model.system.Department;
 

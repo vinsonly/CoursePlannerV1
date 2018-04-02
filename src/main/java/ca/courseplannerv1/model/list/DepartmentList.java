@@ -36,7 +36,6 @@ public class DepartmentList extends CustomList<Department> {
     }
 
 
-
     @Override
     public void printItems() {
         System.out.println("Departments:");
@@ -53,6 +52,16 @@ public class DepartmentList extends CustomList<Department> {
         }
 
         throw new CoursePlannerController.DepartmentNotFoundException(deptId);
+    }
+
+    public Department findDepartmentByDeptName(String deptName) {
+        for(Department thisDept : getList()) {
+            if(thisDept.getDeptName().equals(deptName)) {
+                return thisDept;
+            }
+        }
+
+        throw new CoursePlannerController.DepartmentNotFoundException(deptName);
     }
 
 

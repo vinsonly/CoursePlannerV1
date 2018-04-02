@@ -1,6 +1,6 @@
 package ca.courseplannerv1.controllers;
 
-import ca.courseplannerv1.view.*;
+import ca.courseplannerv1.model.view.*;
 import ca.courseplannerv1.model.system.*;
 import com.google.gson.Gson;
 import org.springframework.http.HttpStatus;
@@ -65,7 +65,7 @@ public class CoursePlannerController {
 
         Department foundDepartment = myModel.findDepartmentById(deptId);
 
-        Course foundCourse = foundDepartment.findCourse(courseId);
+        Course foundCourse = foundDepartment.findCourseByCourseId(courseId);
 
         CourseUI thisCourseUI = new CourseUI(foundCourse.getCourseId(), foundCourse.getCatalogNumber());
 
@@ -84,7 +84,7 @@ public class CoursePlannerController {
     public List<CourseSectionUI> getSections(@PathVariable("deptId") long deptId, @PathVariable("courseId") long courseId, @PathVariable("courseOfferingId") long courseOfferingId) {
         Department foundDepartment = myModel.findDepartmentById(deptId);
 
-        Course foundCourse = foundDepartment.findCourse(courseId);
+        Course foundCourse = foundDepartment.findCourseByCourseId(courseId);
 
         CourseOffering foundCourseOffering = foundCourse.findCourseOffering(courseOfferingId);
 
@@ -121,10 +121,17 @@ public class CoursePlannerController {
     //Exception Handlers
     public static class DepartmentNotFoundException extends RuntimeException {
         private long deptId;
+        private String deptName;
         public DepartmentNotFoundException(long deptId) {
             super();
             this.deptId = deptId;
         }
+
+        public DepartmentNotFoundException(String deptName) {
+            super();
+            this.deptName = deptName;
+        }
+
 
         public long getDeptId() {
             return this.deptId;
@@ -133,9 +140,16 @@ public class CoursePlannerController {
 
     public static class CourseNotFoundException extends RuntimeException {
         private long courseId;
+        private String catalogNumber;
+
         public CourseNotFoundException(long courseId) {
             super();
             this.courseId = courseId;
+        }
+
+        public CourseNotFoundException(String catalogNumber) {
+            super();
+            this.catalogNumber = catalogNumber;
         }
 
         public long getCourseId() {
@@ -145,6 +159,7 @@ public class CoursePlannerController {
 
     public static class CourseOfferingNotFoundException extends RuntimeException {
         private long courseOfferingId;
+
         public CourseOfferingNotFoundException(long courseOfferingId) {
             super();
             this.courseOfferingId = courseOfferingId;

@@ -2,6 +2,7 @@ package ca.courseplannerv1.model.system;
 
 import ca.courseplannerv1.model.list.CourseSubSectionList;
 import ca.courseplannerv1.model.watchers.Observer;
+import ca.courseplannerv1.model.watchers.WatcherInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,7 @@ public class CourseSection {
         this.enrolmentTotal = 0;
         this.type = new String();
         this.subSections = new CourseSubSectionList();
+        registerAsObserver();
     }
 
     //parameterized constructor
@@ -41,6 +43,8 @@ public class CourseSection {
         this.enrolmentTotal = enrolmentTotal;
         this.instructors = instructors;
         this.type = type;
+        this.subSections = new CourseSubSectionList();
+        registerAsObserver();
         sectionCount++;
     }
 
@@ -53,6 +57,7 @@ public class CourseSection {
         this.type = subSection.getType();
         this.subSections = new CourseSubSectionList();
         this.subSections.insert(subSection);
+        registerAsObserver();
         sectionCount++;
     }
 
@@ -64,7 +69,7 @@ public class CourseSection {
     //insert section into courseSections, in sorted order.
     //returns true if successful, false otherwise.
     public void insertCourseSubSection(CourseSubSection subSection) {
-
+        System.out.println("Inserting new sub section.");
         if(this.type.equals(subSection.getType()) == false) {
             return;
         }
@@ -111,30 +116,6 @@ public class CourseSection {
         return myModel.compareString(thisType, otherType);
     }
 
-    private void registerAsObserver() {
-        subSections.addObserver(new Observer() {
-            @Override
-            public void stateChanged() {
-
-                notifyObservers();
-            }
-        });
-    }
-
-    //make observable
-    private List<Observer> observers = new ArrayList<>();
-
-    public void addObserver(Observer observer) {
-        observers.add(observer);
-    }
-
-    private void notifyObservers() {
-        for(Observer observer : observers) {
-            observer.stateChanged();
-        }
-    }
-
-
     public long getCourseSectionId() {
         return courseSectionId;
     }
@@ -174,4 +155,36 @@ public class CourseSection {
     public void setType(String type) {
         this.type = type;
     }
+
+    //register as an observer
+    private void registerAsObserver() {
+        System.out.println("CourseSection registering ss observer for subSections");
+        subSections.addObserver(new Observer() {
+            @Override
+            public void stateChanged(Object obj) {
+                System.out.println("CourseSection stateChanged.");
+                CourseSubSection newSS = CourseSubSection.class.cast(obj);
+                WatcherInfo watcherInfo = new WatcherInfo();
+                watcherInfo.setEnrolmentCapacity(newSS.getEnrolmentCapacity());
+                watcherInfo.setEnrolmentTotal(newSS.getEnrolmentTotal());
+                watcherInfo.setType(newSS.getType());
+                notifyObservers(watcherInfo);
+            }
+        });
+        System.out.println("There are now " + subSections.getObservers().size() + " observers for CourseSubSectionList.");
+    }
+
+    //make observable
+    private List<Observer> observers = new ArrayList<>();
+
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    private void notifyObservers(Object obj) {
+        for(Observer observer : observers) {
+            observer.stateChanged(obj);
+        }
+    }
+
 }

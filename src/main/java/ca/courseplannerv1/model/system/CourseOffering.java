@@ -3,6 +3,7 @@ package ca.courseplannerv1.model.system;
 
 import ca.courseplannerv1.model.list.CourseSectionList;
 import ca.courseplannerv1.model.watchers.Observer;
+import ca.courseplannerv1.model.watchers.WatcherInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,29 +29,19 @@ public class CourseOffering {
         this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.location = new String();
         this.courseSections = new CourseSectionList();
-        this.instructors = new ArrayList<String>();
-        courseOfferingCount++;
-    }
-
-    //parameterized constructor
-    public CourseOffering(Semester sem, String location, ArrayList<String> instructors, CourseSectionList courseSections) {
-        this.courseOfferingId = getAndIncrementCourseOfferingId();
-        this.sem = sem;
-        this.location = location;
-        this.courseSections = courseSections;
-        this.instructors = instructors;
+        this.instructors = new ArrayList<>();
         courseOfferingCount++;
     }
 
     //parametrized contrusctor
     public CourseOffering(Semester sem, String location, ArrayList<String> instructors, CourseSection section) {
         this.courseSections = new CourseSectionList();
-        this.courseSections.insert(section);
         this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.sem = sem;
         this.location = location;
         this.instructors = instructors;
         courseOfferingCount++;
+        this.courseSections.insert(section);
     }
 
 
@@ -63,10 +54,17 @@ public class CourseOffering {
     public void insertCourseSection(CourseSection section) {
         courseSections.insertSorted(section);
         insertInstructors(section.getInstructors());
+        registerAsObserver(section);
     }
 
     //insert instructor, in sorted order, no duplicates
     public void insertInstructors(ArrayList<String> newInstructors) {
+
+        if(this.instructors.size() == 0) {
+            this.instructors = newInstructors;
+            return;
+        }
+
         boolean duplicate = false;
         for(String newInstructor : newInstructors) {
             int currentIndex = 0;
@@ -124,19 +122,6 @@ public class CourseOffering {
         }
     }
 
-    //make observable
-    private List<Observer> observers = new ArrayList<>();
-
-    public void addObserver(Observer observer) {
-        observers.add(observer);
-    }
-
-    private void notifyObservers() {
-        for(Observer observer : observers) {
-            observer.stateChanged();
-        }
-    }
-
     public ArrayList<String> getInstructors() {
         return instructors;
     }
@@ -176,4 +161,35 @@ public class CourseOffering {
     public void setCourseSections(CourseSectionList courseSections) {
         this.courseSections = courseSections;
     }
+
+    //register as an observer
+    private void registerAsObserver(CourseSection courseSection) {
+        courseSection.addObserver(new Observer() {
+            @Override
+            public void stateChanged(Object obj) {
+                System.out.println("CourseOffering stateChanged.");
+
+                WatcherInfo watcherInfo = WatcherInfo.class.cast(obj);
+                watcherInfo.setSemester(sem.getSem().toString());
+                watcherInfo.setYear(sem.getYear());
+
+                notifyObservers(watcherInfo);
+            }
+        });
+    }
+
+    //make observable
+    private List<Observer> observers = new ArrayList<>();
+
+    public void addObserver(Observer observer) {
+        observers.add(observer);
+    }
+
+    private void notifyObservers(Object obj) {
+        System.out.println("SubSection notifying observers.");
+        for(Observer observer : observers) {
+            observer.stateChanged(obj);
+        }
+    }
+
 }

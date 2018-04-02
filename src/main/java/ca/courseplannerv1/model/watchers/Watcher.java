@@ -1,9 +1,10 @@
 package ca.courseplannerv1.model.watchers;
 
-import ca.courseplannerv1.view.CourseUI;
-import ca.courseplannerv1.view.DepartmentUI;
-import ca.courseplannerv1.model.list.CourseList;
-import ca.courseplannerv1.model.list.DepartmentList;
+import ca.courseplannerv1.model.system.Course;
+import ca.courseplannerv1.model.system.Department;
+import ca.courseplannerv1.model.system.myModel;
+import ca.courseplannerv1.model.view.CourseUI;
+import ca.courseplannerv1.model.view.DepartmentUI;
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
@@ -21,20 +22,13 @@ public class Watcher {
     private CourseUI course;
     private ArrayList<String> events;
 
-    private DepartmentList departmentList = new DepartmentList();
-    private CourseList courseList = new CourseList();
 
-
-    public Watcher() {
-    }
-
-    public Watcher(long watcherId, DepartmentUI department, CourseUI course, ArrayList<String> events, DepartmentList departmentList, CourseList courseList) {
-        this.watcherId = watcherId;
+    public Watcher(DepartmentUI department, CourseUI course) {
+        this.watcherId = getAndIncrementWatcherId();
         this.department = department;
         this.course = course;
-        this.events = events;
-        this.departmentList = departmentList;
-        this.courseList = courseList;
+        this.events = new ArrayList<>();
+        registerAsObserver();
     }
 
     public long getAndIncrementWatcherId() {
@@ -45,17 +39,29 @@ public class Watcher {
     private void registerAsObserver() {
         String deptName = department.getName();
         String catalogNum = course.getCatalogNumber();
+        Department dept = myModel.departmentList.findDepartmentByDeptName(deptName);
+        Course course = dept.getCourses().findCourseByCatalogNumber(catalogNum);
 
-        departmentList.addObserver(new Observer() {
+        course.addObserver(new Observer() {
             @Override
-            public void stateChanged() {
-                addCourseEvent();
+            public void stateChanged(Object obj) {
+                System.out.println("Watcher stateChanged.");
+                WatcherInfo watcherInfo = WatcherInfo.class.cast(obj);
+                addedCourseEvent(watcherInfo);
             }
         });
     }
 
-    private void addCourseEvent() {
+    private void addedCourseEvent(WatcherInfo watcherInfo) {
         String date = getPresentDateString();
+        watcherInfo.setDate(date);
+
+        //call endpoint
+        System.out.println(watcherInfo.getDate() + ": Added section " +
+                watcherInfo.getType() + " with enrollment (" +
+                watcherInfo.getEnrolmentTotal() + "/" + watcherInfo.getEnrolmentCapacity() +
+                ") to offering " + watcherInfo.getSemester() + " " +
+                watcherInfo.getYear());
 
 
 //        Sun Mar 25 21:41:35 PDT 2018: Added section LEC with enrollment (89 / 90)

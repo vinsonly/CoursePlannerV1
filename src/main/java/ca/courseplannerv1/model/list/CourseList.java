@@ -1,5 +1,6 @@
 package ca.courseplannerv1.model.list;
 
+import ca.courseplannerv1.controllers.CoursePlannerController;
 import ca.courseplannerv1.model.system.Course;
 import ca.courseplannerv1.model.system.Department;
 import ca.courseplannerv1.model.watchers.Observer;
@@ -45,6 +46,16 @@ public class CourseList extends CustomList<Course>{
         for(Course course : getList()) {
             System.out.println(course.getCatalogNumber());
         }
+    }
+
+    public Course findCourseByCatalogNumber(String catalogNumber) {
+        for(Course course : getList()) {
+            if(course.getCatalogNumber().equals(catalogNumber)) {
+                return course;
+            }
+        }
+
+        throw new CoursePlannerController.CourseNotFoundException(catalogNumber);
     }
 
 }

@@ -1,6 +1,11 @@
 package ca.courseplannerv1;
 
+import ca.courseplannerv1.model.list.CourseList;
+import ca.courseplannerv1.model.list.DepartmentList;
 import ca.courseplannerv1.model.system.*;
+import ca.courseplannerv1.model.view.CourseUI;
+import ca.courseplannerv1.model.view.DepartmentUI;
+import ca.courseplannerv1.model.watchers.Watcher;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -20,6 +25,16 @@ public class Application {
         myModel.departmentList.printItems();
         myModel.departmentList.get(1).getCourses().printItems();
         myModel.departmentList.get(1).getCourses().get(1).getCourseOfferings().printItems();
+        Department dept = myModel.departmentList.get(1);
+        Course course = dept.getCourses().get(1);
+        DepartmentUI newDeptUI = new DepartmentUI(dept);
+        CourseUI newCourseUI = new CourseUI(course);
+        Watcher newWatcher = new Watcher(newDeptUI, newCourseUI);
+        System.out.println(dept.getDeptName());
+        System.out.println(course.getCatalogNumber());
+        SpringApplication.run(Application.class, args);
+
+
 
 
 //            int enrolmentCapacity = 5;

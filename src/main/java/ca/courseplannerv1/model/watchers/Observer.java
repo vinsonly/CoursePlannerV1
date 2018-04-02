@@ -4,5 +4,7 @@ package ca.courseplannerv1.model.watchers;
 //changes to myModel changes
 
 public interface Observer {
-    void stateChanged();
+
+
+    void stateChanged(Object obj);
 }

@@ -59,8 +59,7 @@ public class Department {
         courses.insertSorted(course);
     }
 
-    //search for a course
-    public Course findCourse(long courseId) {
+    public Course findCourseByCourseId(long courseId) {
         for(Course course : courses) {
             if(course.getCourseId() == courseId) {
                 return course;
