@@ -27,11 +27,10 @@ public class Application {
         myModel.departmentList.get(1).getCourses().get(1).getCourseOfferings().printItems();
         Department dept = myModel.departmentList.get(1);
         Course course = dept.getCourses().get(1);
-        DepartmentUI newDeptUI = new DepartmentUI(dept);
-        CourseUI newCourseUI = new CourseUI(course);
-        Watcher newWatcher = new Watcher(newDeptUI, newCourseUI);
+        Watcher newWatcher = new Watcher(dept.getDeptId(), course.getCourseId());
         System.out.println(dept.getDeptName());
         System.out.println(course.getCatalogNumber());
+
         SpringApplication.run(Application.class, args);
 
 

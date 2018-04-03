@@ -41,10 +41,5 @@ public class CourseSectionList extends CustomList<CourseSection> {
         }
     }
 
-    @Override
-    public void insert(CourseSection courseSection) {
-        super.insert(courseSection);
-        super.notifyObservers(courseSection);
-    }
 }
 

@@ -2,7 +2,9 @@ package ca.courseplannerv1.model.system;
 
 import ca.courseplannerv1.controllers.CoursePlannerController;
 import ca.courseplannerv1.model.list.DepartmentList;
+import ca.courseplannerv1.model.list.WatcherList;
 import ca.courseplannerv1.model.watchers.Observer;
+import ca.courseplannerv1.model.watchers.Watcher;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -19,7 +21,7 @@ public class myModel {
     public static DepartmentList departmentList = new DepartmentList();
 
     //list of observers
-    private ArrayList<Observer> observers = new ArrayList<Observer>();
+    public static WatcherList watcherList = new WatcherList();
 
     //insert new department into departments, in sorted ascending alphabetical order of deptName
     private static void insertNewDepartment(Department department) {
@@ -74,32 +76,36 @@ public class myModel {
                     }
                     else {
                         //create a new section, insert subsection, insert section into offering
-                        thisSection = new CourseSection(subSection);
+                        thisSection = new CourseSection(enrolCap, enrolTot, instructors, type);
                         thisOffering.insertCourseSection(thisSection);
+                        thisSection.insertCourseSubSection(subSection);
                     }
                 }
                 else {
                     //create a new CourseOffering, CourseSection, link all together
-                    thisSection = new CourseSection(subSection);
+                    thisSection = new CourseSection(enrolCap, enrolTot, instructors, type);
                     thisOffering = new CourseOffering(newSem, location, instructors, thisSection);
                     thisCourse.insertNewCourseOffering(thisOffering);
+                    thisSection.insertCourseSubSection(subSection);
                 }
             }
             else {
                 //create a new Course, CourseOffering, Course Section, link all together
-                thisSection = new CourseSection(subSection);
+                thisSection = new CourseSection(enrolCap, enrolTot, instructors, type);
                 thisOffering = new CourseOffering(newSem, location, instructors, thisSection);
                 thisCourse = new Course(deptName, catalogNumber, location, thisOffering);
                 thisDept.insertNewCourse(thisCourse);
+                thisSection.insertCourseSubSection(subSection);
             }
         }
         else {
             //create a new Department, Course, CourseOffering, Course Section, link all together
-            thisSection = new CourseSection(subSection);
+            thisSection = new CourseSection(enrolCap, enrolTot, instructors, type);
             thisOffering = new CourseOffering(newSem, location, instructors, thisSection);
             thisCourse = new Course(deptName, catalogNumber, location, thisOffering);
             thisDept = new Department(deptName, thisCourse);
             myModel.insertNewDepartment(thisDept);
+            thisSection.insertCourseSubSection(subSection);
         }
 
         myModel.insertions++;

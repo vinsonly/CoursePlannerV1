@@ -20,11 +20,11 @@ public class CourseSubSectionList extends CustomList<CourseSubSection>{
     }
 
     @Override
-    public void insert(CourseSubSection courseSubSection) {
-        super.insert(courseSubSection);
-        System.out.println("There are " + getObservers().size() + " observers for CourseSubSectionList");
-        notifyObservers(courseSubSection);
+    protected void notifyObservers(CourseSubSection obj) {
+        System.out.println("CourseSubSectionList notifying observers.");
+        super.notifyObservers(obj);
     }
+
 
 }
 

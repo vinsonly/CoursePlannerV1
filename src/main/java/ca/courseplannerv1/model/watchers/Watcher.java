@@ -3,8 +3,6 @@ package ca.courseplannerv1.model.watchers;
 import ca.courseplannerv1.model.system.Course;
 import ca.courseplannerv1.model.system.Department;
 import ca.courseplannerv1.model.system.myModel;
-import ca.courseplannerv1.model.view.CourseUI;
-import ca.courseplannerv1.model.view.DepartmentUI;
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
@@ -18,16 +16,26 @@ public class Watcher {
     private static AtomicLong nextWatcherId = new AtomicLong();
 
     private long watcherId;
-    private DepartmentUI department;
-    private CourseUI course;
     private ArrayList<String> events;
+    private Course course;
+    private Department department;
+    private Observer observer;
 
-
-    public Watcher(DepartmentUI department, CourseUI course) {
-        this.watcherId = getAndIncrementWatcherId();
+    public Watcher(Department department, Course course) {
+        getAndIncrementWatcherId();
         this.department = department;
         this.course = course;
         this.events = new ArrayList<>();
+        this.observer = createObserver();
+        registerAsObserver();
+    }
+
+    public Watcher(long deptId, long courseId) {
+        getAndIncrementWatcherId();
+        this.department = myModel.departmentList.findDepartmentByDeptId(deptId);
+        this.course = this.department.findCourseByCourseId(courseId);
+        this.events = new ArrayList<>();
+        this.observer = createObserver();
         registerAsObserver();
     }
 
@@ -36,20 +44,26 @@ public class Watcher {
         return watcherId;
     }
 
-    private void registerAsObserver() {
-        String deptName = department.getName();
-        String catalogNum = course.getCatalogNumber();
-        Department dept = myModel.departmentList.findDepartmentByDeptName(deptName);
-        Course course = dept.getCourses().findCourseByCatalogNumber(catalogNum);
-
-        course.addObserver(new Observer() {
+    public Observer createObserver() {
+        Observer newObserver = new Observer() {
             @Override
             public void stateChanged(Object obj) {
                 System.out.println("Watcher stateChanged.");
                 WatcherInfo watcherInfo = WatcherInfo.class.cast(obj);
                 addedCourseEvent(watcherInfo);
             }
-        });
+        };
+        return newObserver;
+    }
+
+    private void registerAsObserver() {
+        Department dept = this.department;
+        Course course = this.course;
+        course.addObserver(this.observer);
+    }
+
+    public void deregisterAsObserver() {
+        course.removeObserver(this.observer);
     }
 
     private void addedCourseEvent(WatcherInfo watcherInfo) {
@@ -75,7 +89,7 @@ public class Watcher {
         isoFormat.setTimeZone(TimeZone.getTimeZone("PST"));
 
         String dateString = isoFormat.format(today);
-        System.out.println(dateString);
+//        System.out.println(dateString);
         return dateString;
     }
 
@@ -91,27 +105,27 @@ public class Watcher {
         this.watcherId = watcherId;
     }
 
-    public DepartmentUI getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(DepartmentUI department) {
-        this.department = department;
-    }
-
-    public CourseUI getCourse() {
-        return course;
-    }
-
-    public void setCourse(CourseUI course) {
-        this.course = course;
-    }
-
     public ArrayList<String> getEvents() {
         return events;
     }
 
     public void setEvents(ArrayList<String> events) {
         this.events = events;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 }

@@ -35,6 +35,11 @@ public abstract class CustomList<T> implements Iterable<T>{
         list.remove(index);
     }
 
+    //remove obj from list
+    public void remove(T obj) {
+        list.remove(obj);
+    }
+
     //retreive the obj from list at the given index
     public T get(int index) {
         return list.get(index);
@@ -84,7 +89,6 @@ public abstract class CustomList<T> implements Iterable<T>{
     }
 
     protected void notifyObservers(T obj) {
-        System.out.println("CourseSubSectionList notifying observers.");
         for(Observer observer : observers) {
             observer.stateChanged(obj);
         }

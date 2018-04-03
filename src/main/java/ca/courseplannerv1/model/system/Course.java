@@ -49,6 +49,7 @@ public class Course {
 
     //parametrized constructor
     public Course(String deptName, String catalogNumber, String location, CourseOffering courseOffering) {
+        System.out.println("Creating new Course");
         ArrayList<String> locations = new ArrayList<>();
         locations.add(location);
         this.courseOfferings = new CourseOfferingList();
@@ -142,11 +143,13 @@ public class Course {
 
     //register as an observer
     private void registerAsObserver(CourseOffering courseOffering) {
+        System.out.println("Registering as observer for courseOffering");
         courseOffering.addObserver(new Observer() {
             @Override
             public void stateChanged(Object obj) {
                 System.out.println("Course stateChanged.");
                 WatcherInfo watcherInfo = WatcherInfo.class.cast(obj);
+                watcherInfo.printWatcherInfo();
                 notifyObservers(watcherInfo);
             }
         });
@@ -158,6 +161,8 @@ public class Course {
     public void addObserver(Observer observer) {
         observers.add(observer);
     }
+
+    public void removeObserver(Observer observer) {observers.remove(observer);}
 
     private void notifyObservers(Object obj) {
         for(Observer observer : observers) {

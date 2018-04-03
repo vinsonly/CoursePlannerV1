@@ -38,6 +38,7 @@ public class CourseSection {
 
     //parameterized constructor
     public CourseSection(int enrolmentCapacity, int enrolmentTotal, ArrayList<String> instructors, String type) {
+        System.out.println("Creating new CourseSection");
         this.courseSectionId = getAndIncrementCourseSectionId();
         this.enrolmentCapacity = enrolmentCapacity;
         this.enrolmentTotal = enrolmentTotal;
@@ -50,14 +51,16 @@ public class CourseSection {
 
     //parameterized constructor
     public CourseSection(CourseSubSection subSection) {
+        System.out.println("Creating new CourseSection");
         this.courseSectionId = getAndIncrementCourseSectionId();
         this.instructors = subSection.getInstructors();
         this.enrolmentCapacity = subSection.getEnrolmentCapacity();
         this.enrolmentTotal = subSection.getEnrolmentTotal();
         this.type = subSection.getType();
+        System.out.println("Creating new CourseSubSectionList.");
         this.subSections = new CourseSubSectionList();
-        this.subSections.insert(subSection);
         registerAsObserver();
+        this.subSections.insert(subSection);
         sectionCount++;
     }
 

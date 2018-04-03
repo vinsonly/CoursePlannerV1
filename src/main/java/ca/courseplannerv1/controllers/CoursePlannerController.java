@@ -2,6 +2,7 @@ package ca.courseplannerv1.controllers;
 
 import ca.courseplannerv1.model.view.*;
 import ca.courseplannerv1.model.system.*;
+import ca.courseplannerv1.model.watchers.Watcher;
 import com.google.gson.Gson;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -117,6 +118,53 @@ public class CoursePlannerController {
         return newCourseSectionUI;
     }
 
+    @GetMapping("/api/watchers")
+    public ArrayList<WatcherUI> listAllWatchers() {
+        ArrayList<WatcherUI> watcherUIS = new ArrayList<>();
+        for(Watcher watcher : myModel.watcherList) {
+            WatcherUI newWatcherUI = new WatcherUI(watcher);
+            watcherUIS.add(newWatcherUI);
+        }
+        return watcherUIS;
+    }
+
+    @PostMapping("/api/watchers")
+    @ResponseStatus(HttpStatus.CREATED)
+    public WatcherUI createWatcher(@RequestBody String watcherPostUIJSON) {
+        System.out.println(watcherPostUIJSON);
+
+        Gson gson = new Gson();
+
+        WatcherPostUI watcherPostUI = gson.fromJson(watcherPostUIJSON, WatcherPostUI.class);
+
+        System.out.println(watcherPostUI.getDeptId());
+        System.out.println(watcherPostUI.getCourseId());
+
+        Watcher newWatcher = new Watcher(watcherPostUI.getDeptId(), watcherPostUI.getCourseId());
+
+        myModel.watcherList.insert(newWatcher);
+
+        WatcherUI newWatcherUI = new WatcherUI(newWatcher);
+
+        return newWatcherUI;
+    }
+
+    @GetMapping("/api/watchers/{watcherId}")
+    public WatcherUI getWatcher(@PathVariable("watcherId") long watcherId) {
+        Watcher watcher = myModel.watcherList.findWatcherByWatcherId(watcherId);
+        WatcherUI watcherUI = new WatcherUI(watcher);
+        return watcherUI;
+    }
+
+    @DeleteMapping("/api/watchers/{watcherId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteWatcher(@PathVariable("watcherId") long watcherId) {
+        Watcher watcher = myModel.watcherList.findWatcherByWatcherId(watcherId);
+        myModel.watcherList.remove(watcher);
+        watcher.deregisterAsObserver();
+    }
+
+
 
     //Exception Handlers
     public static class DepartmentNotFoundException extends RuntimeException {
@@ -170,6 +218,19 @@ public class CoursePlannerController {
         }
     }
 
+    public static class WatcherNotFoundException extends RuntimeException {
+        private long watcherId;
+
+        public WatcherNotFoundException(long watcherId) {
+            super();
+            this.watcherId = watcherId;
+        }
+
+        public long getWatcherId() {
+            return this.watcherId;
+        }
+    }
+
 
     //If deptID is invalid
     @ResponseStatus(value = HttpStatus.NOT_FOUND)
@@ -190,6 +251,13 @@ public class CoursePlannerController {
     @ExceptionHandler(CourseOfferingNotFoundException.class)
     public void badIdExceptionHandler(CourseOfferingNotFoundException e, HttpServletResponse response) throws IOException {
         String message = "Course offering of ID " + e.getCourseOfferingId() + " not found.";
+        response.sendError(HttpServletResponse.SC_NOT_FOUND, message);
+    }
+
+    @ResponseStatus(value = HttpStatus.NOT_FOUND)
+    @ExceptionHandler(WatcherNotFoundException.class)
+    public void badIdExceptionHandler(WatcherNotFoundException e, HttpServletResponse response) throws IOException {
+        String message = "Unable to find requested watcher.";
         response.sendError(HttpServletResponse.SC_NOT_FOUND, message);
     }
 

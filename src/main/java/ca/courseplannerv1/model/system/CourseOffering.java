@@ -35,6 +35,7 @@ public class CourseOffering {
 
     //parametrized contrusctor
     public CourseOffering(Semester sem, String location, ArrayList<String> instructors, CourseSection section) {
+        System.out.println("Creating new CourseOffering.");
         this.courseSections = new CourseSectionList();
         this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.sem = sem;
@@ -42,6 +43,8 @@ public class CourseOffering {
         this.instructors = instructors;
         courseOfferingCount++;
         this.courseSections.insert(section);
+        this.instructors.addAll(section.getInstructors());
+        registerAsObserver(section);
     }
 
 
@@ -164,6 +167,7 @@ public class CourseOffering {
 
     //register as an observer
     private void registerAsObserver(CourseSection courseSection) {
+        System.out.println("Registering as observer for courseSection");
         courseSection.addObserver(new Observer() {
             @Override
             public void stateChanged(Object obj) {

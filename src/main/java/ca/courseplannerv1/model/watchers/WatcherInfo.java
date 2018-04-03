@@ -1,12 +1,10 @@
 package ca.courseplannerv1.model.watchers;
 
-import java.util.ArrayList;
-
 public class WatcherInfo {
     private int enrolmentCapacity;
     private int enrolmentTotal;
     private String type;
-    private String Semester; //SPRING, FALL, SUMMER
+    private String semester; //SPRING, FALL, SUMMER
     private int year;
     private String date;
 
@@ -19,8 +17,17 @@ public class WatcherInfo {
         this.enrolmentCapacity = enrolmentCapacity;
         this.enrolmentTotal = enrolmentTotal;
         this.type = type;
-        Semester = semester;
+        this.semester = semester;
         this.year = year;
+    }
+
+    public void printWatcherInfo() {
+        System.out.println("enrolmentCapacity = " + getEnrolmentCapacity());
+        System.out.println("enrolmentTotal = " + getEnrolmentTotal());
+        System.out.println("type = " + type);
+        System.out.println("semester = " + semester);
+        System.out.println("year = " + year);
+        System.out.println("date = " + date);
     }
 
     public int getEnrolmentCapacity() {
@@ -48,11 +55,11 @@ public class WatcherInfo {
     }
 
     public String getSemester() {
-        return Semester;
+        return semester;
     }
 
     public void setSemester(String semester) {
-        Semester = semester;
+        this.semester = semester;
     }
 
     public int getYear() {
