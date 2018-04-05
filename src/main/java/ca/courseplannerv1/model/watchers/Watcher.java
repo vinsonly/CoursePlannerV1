@@ -70,12 +70,14 @@ public class Watcher {
         String date = getPresentDateString();
         watcherInfo.setDate(date);
 
-        //call endpoint
-        System.out.println(watcherInfo.getDate() + ": Added section " +
+        String event = watcherInfo.getDate() + ": Added section " +
                 watcherInfo.getType() + " with enrollment (" +
                 watcherInfo.getEnrolmentTotal() + "/" + watcherInfo.getEnrolmentCapacity() +
                 ") to offering " + watcherInfo.getSemester() + " " +
-                watcherInfo.getYear());
+                watcherInfo.getYear();
+        //call endpoint
+        System.out.println(event);
+        this.events.add(event);
 
 
 //        Sun Mar 25 21:41:35 PDT 2018: Added section LEC with enrollment (89 / 90)
