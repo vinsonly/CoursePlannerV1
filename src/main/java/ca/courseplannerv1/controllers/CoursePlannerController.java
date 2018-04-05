@@ -1,5 +1,6 @@
 package ca.courseplannerv1.controllers;
 
+import ca.courseplannerv1.model.list.CourseList;
 import ca.courseplannerv1.model.view.*;
 import ca.courseplannerv1.model.system.*;
 import ca.courseplannerv1.model.watchers.Watcher;
@@ -162,6 +163,16 @@ public class CoursePlannerController {
         Watcher watcher = myModel.watcherList.findWatcherByWatcherId(watcherId);
         myModel.watcherList.remove(watcher);
         watcher.deregisterAsObserver();
+    }
+
+    @GetMapping("/api/stats/students-per-semester")
+    public ArrayList getStudentsPerSemester(@RequestBody long departmentId){
+        Department currentDepartment = myModel.findDepartmentById(departmentId);
+        CourseList listOfCourses = currentDepartment.getCourses();
+        for (Course currentCourse)
+        ArrayList<StudentPerSemester> studentPerSemesters = new ArrayList<>();
+
+        return studentPerSemesters;
     }
 
 

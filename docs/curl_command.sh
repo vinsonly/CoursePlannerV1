@@ -81,7 +81,7 @@ curl -i -H "Content-Type: application/json" \
         "component": "LEC",
         "enrollmentTotal": 89,
         "instructor": "Brian Fraser"
-    }' ${SERVER}/api/addoffering
+    }' localhost:8080/api/addoffering
 
 curl -i -H "Content-Type: application/json" \
     -X POST  -d '{
