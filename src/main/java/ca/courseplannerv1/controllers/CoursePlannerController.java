@@ -15,12 +15,10 @@ import java.util.List;
 @RestController
 public class CoursePlannerController {
 
-    //General
-
-
     @GetMapping("/api/about")
-    public String getInfo() {
-        return "This is an awesome Course Planner written by Vinson Ly.";
+    public AboutUI getInfo() {
+        AboutUI newAboutUI = new AboutUI("Leo and Vinson's course planner app", "Leo Mai & Vinson Ly");
+        return newAboutUI;
     }
 
     @GetMapping("/api/dump-model")
