@@ -24,6 +24,9 @@ public class GraphProcessor {
 
     public void processGraphData(long departmentId){
         ArrayList<StudentPerSemester> listOfStudentPerSemester = getStudentPerSemesters(departmentId);
+        insertSemesterWithNoStudent(listOfStudentPerSemester);
+        ArrayList<StudentPerSemester> listOfLectureSeatTaken = getListOfLectureSeatTaken();
+        listOfLectureSeatTaken.addAll(listOfStudentPerSemester);
 
     }
 
@@ -38,7 +41,7 @@ public class GraphProcessor {
 
     private int getLastSemester(ArrayList<StudentPerSemester> studentsPerSemesterList){
 //        Collections.sort(listOfSemester,StudentPerSemester.SemesterCodeComparator);
-        int lastSemesterIndex = listOfSemester.size() - LIST_OFFSET;
+        int lastSemesterIndex = studentsPerSemesterList.size() - LIST_OFFSET;
         return studentsPerSemesterList.get(lastSemesterIndex).getSemesterCode();
     }
 
@@ -53,7 +56,7 @@ public class GraphProcessor {
             ArrayList<Integer> listOfSemCodes = getSemesterCodeOfYear(currentYear);
             for (int currentSemesterCode : listOfSemCodes){
                 StudentPerSemester currentSemester = new StudentPerSemester(currentSemesterCode);
-                insertSorted(studentsPerSemesterList, studentPerSemester);
+                insertSorted(studentsPerSemesterList, currentSemester);
             }
         }
     }
