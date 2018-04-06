@@ -22,14 +22,14 @@ public class Application {
         CSVParser.readCSV();
         myModel.dumpModel();
         myModel.dumpModelToFile();
-        myModel.departmentList.printItems();
-        myModel.departmentList.get(1).getCourses().printItems();
-        myModel.departmentList.get(1).getCourses().get(1).getCourseOfferings().printItems();
-        Department dept = myModel.departmentList.get(1);
-        Course course = dept.getCourses().get(1);
-        Watcher newWatcher = new Watcher(dept.getDeptId(), course.getCourseId());
-        System.out.println(dept.getDeptName());
-        System.out.println(course.getCatalogNumber());
+//        myModel.departmentList.printItems();
+//        myModel.departmentList.get(1).getCourses().printItems();
+//        myModel.departmentList.get(1).getCourses().get(1).getCourseOfferings().printItems();
+//        Department dept = myModel.departmentList.get(1);
+//        Course course = dept.getCourses().get(1);
+//        Watcher newWatcher = new Watcher(dept.getDeptId(), course.getCourseId());
+//        System.out.println(dept.getDeptName());
+//        System.out.println(course.getCatalogNumber());
 
         SpringApplication.run(Application.class, args);
 

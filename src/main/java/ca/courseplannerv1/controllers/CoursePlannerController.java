@@ -162,6 +162,17 @@ public class CoursePlannerController {
         watcher.deregisterAsObserver();
     }
 
+    @GetMapping("/api/stats/students-per-semester")
+    @ResponseBody
+    public StudentPerSemesterList getStudentsPerSemester(@RequestParam("deptId") long departmentId){
+        GraphProcessor graphProcessor = new GraphProcessor();
+        graphProcessor.processGraphData(departmentId);
+
+        return graphProcessor.getListOfLectureSeatTaken();
+    }
+
+
+
 
 
     //Exception Handlers
