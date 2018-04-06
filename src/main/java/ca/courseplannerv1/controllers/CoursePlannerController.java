@@ -167,7 +167,8 @@ public class CoursePlannerController {
     }
 
     @GetMapping("/api/stats/students-per-semester")
-    public StudentPerSemesterList getStudentsPerSemester(@RequestBody long departmentId){
+    @ResponseBody
+    public StudentPerSemesterList getStudentsPerSemester(@RequestParam("deptId") long departmentId){
         StudentPerSemesterList studentsPerSemesterList = getStudentPerSemesters(departmentId);
         insertSemesterWithNoStudent(studentsPerSemesterList);
 
@@ -200,8 +201,10 @@ public class CoursePlannerController {
                 Semester currentSemester = currentOffering.getSem();
                 StudentPerSemester studentPerSemester = new StudentPerSemester(currentSemester.getSemCode());
                 CourseSectionList listOfCourseSection = currentOffering.getCourseSections();
-                for (CourseSection currentSection : listOfCourseSection){
-                    studentPerSemester.setTotalStudent(currentSection.getEnrolmentTotal());
+                for (CourseSection currentSection : listOfCourseSection) {
+                    if (currentSection.getType().equals("LEC")) {
+                        studentPerSemester.addToTotalStudent(currentSection.getEnrolmentTotal());
+                    }
                 }
                 studentsPerSemesterList.insertSorted(studentPerSemester);
             }

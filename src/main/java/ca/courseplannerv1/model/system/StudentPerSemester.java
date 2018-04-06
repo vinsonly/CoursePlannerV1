@@ -20,8 +20,8 @@ public class StudentPerSemester {
         return totalStudent;
     }
 
-    public void setTotalStudent(int totalStudent) {
-        this.totalStudent += totalStudent;
+    public void addToTotalStudent(int newStudents) {
+        this.totalStudent += newStudents;
     }
 
     public static Comparator<StudentPerSemester> SemesterCodeComparator = new Comparator<StudentPerSemester>() {

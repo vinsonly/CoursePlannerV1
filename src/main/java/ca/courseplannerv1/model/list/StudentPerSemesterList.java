@@ -17,17 +17,17 @@ public class StudentPerSemesterList extends CustomList<StudentPerSemester> {
     @Override
     public void insertSorted(StudentPerSemester obj) {
         List<StudentPerSemester> listOfSemester = getList();
-        StudentPerSemester findSemester = findSemester(listOfSemester,obj);
-        if (findSemester != null){
-            findSemester.setTotalStudent(obj.getTotalStudent());
+        StudentPerSemester savedSemester = findSemester(obj);
+        if (savedSemester != null){
+            savedSemester.addToTotalStudent(obj.getTotalStudent());
         } else {
             listOfSemester.add(obj);
         }
         sort();
     }
 
-    private StudentPerSemester findSemester(List<StudentPerSemester> listOfSemester, StudentPerSemester obj) {
-        for (StudentPerSemester currentSemester : listOfSemester){
+    private StudentPerSemester findSemester(StudentPerSemester obj) {
+        for (StudentPerSemester currentSemester : this.getList()){
             if (currentSemester.getSemester() == obj.getSemester()){
                 return currentSemester;
             }
@@ -57,4 +57,5 @@ public class StudentPerSemesterList extends CustomList<StudentPerSemester> {
     public void remove(StudentPerSemester obj) {
         super.remove(obj);
     }
+
 }
