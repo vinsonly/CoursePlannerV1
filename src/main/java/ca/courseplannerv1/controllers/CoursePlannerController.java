@@ -1,6 +1,9 @@
 package ca.courseplannerv1.controllers;
 
 import ca.courseplannerv1.model.list.CourseList;
+import ca.courseplannerv1.model.list.CourseOfferingList;
+import ca.courseplannerv1.model.list.CourseSectionList;
+import ca.courseplannerv1.model.list.StudentPerSemesterList;
 import ca.courseplannerv1.model.view.*;
 import ca.courseplannerv1.model.system.*;
 import ca.courseplannerv1.model.watchers.Watcher;
@@ -164,13 +167,59 @@ public class CoursePlannerController {
     }
 
     @GetMapping("/api/stats/students-per-semester")
-    public ArrayList getStudentsPerSemester(@RequestBody long departmentId){
+    public StudentPerSemesterList getStudentsPerSemester(@RequestBody long departmentId){
+        StudentPerSemesterList studentsPerSemesterList = getStudentPerSemesters(departmentId);
+        insertSemesterWithNoStudent(studentsPerSemesterList);
+
+        return studentsPerSemesterList;
+    }
+
+    private void insertSemesterWithNoStudent(StudentPerSemesterList studentsPerSemesterList) {
+        int firstSemesterCode = studentsPerSemesterList.getFirstSemester();
+        Semester firstSemester = new Semester(firstSemesterCode);
+        int firstSemesterYear = firstSemester.getYear();
+        int lastSemesterCode = studentsPerSemesterList.getLastSemester();
+        Semester lastSemester = new Semester(lastSemesterCode);
+        int lastSemesterYear = lastSemester.getYear();
+        for (int currentYear = firstSemesterYear; currentYear <= lastSemesterYear; currentYear++){
+            ArrayList<Integer> listOfSemCodes = getSemesterCodeOfYear(currentYear);
+            for (int currentSemesterCode : listOfSemCodes){
+                StudentPerSemester currentSemester = new StudentPerSemester(currentSemesterCode);
+                studentsPerSemesterList.insertSorted(currentSemester);
+            }
+        }
+    }
+
+    private StudentPerSemesterList getStudentPerSemesters(long departmentId) {
+        StudentPerSemesterList studentsPerSemesterList = new StudentPerSemesterList();
         Department currentDepartment = myModel.findDepartmentById(departmentId);
         CourseList listOfCourses = currentDepartment.getCourses();
-        for (Course currentCourse)
-        ArrayList<StudentPerSemester> studentPerSemesters = new ArrayList<>();
+        for (Course currentCourse : listOfCourses){
+            CourseOfferingList listOfOffering = currentCourse.getCourseOfferings();
+            for (CourseOffering currentOffering : listOfOffering){
+                Semester currentSemester = currentOffering.getSem();
+                StudentPerSemester studentPerSemester = new StudentPerSemester(currentSemester.getSemCode());
+                CourseSectionList listOfCourseSection = currentOffering.getCourseSections();
+                for (CourseSection currentSection : listOfCourseSection){
+                    studentPerSemester.setTotalStudent(currentSection.getEnrolmentTotal());
+                }
+                studentsPerSemesterList.insertSorted(studentPerSemester);
+            }
+        }
+        return studentsPerSemesterList;
+    }
 
-        return studentPerSemesters;
+    private ArrayList<Integer> getSemesterCodeOfYear(int year){
+        int firstDigit = 1000;
+        int secondThirdDigit = (year - 2000)*10;
+        int springSemesterCode = firstDigit + secondThirdDigit + 1;
+        int summerSemesterCode = firstDigit + secondThirdDigit + 4;
+        int fallSemesterCode = firstDigit + secondThirdDigit + 7;
+        ArrayList<Integer> listOfSemesterCode = new ArrayList<>();
+        listOfSemesterCode.add(springSemesterCode);
+        listOfSemesterCode.add(summerSemesterCode);
+        listOfSemesterCode.add(fallSemesterCode);
+        return listOfSemesterCode;
     }
 
 

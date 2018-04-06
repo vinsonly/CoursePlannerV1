@@ -2,15 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92e1da43-b6e1-41a7-9dac-64dded2828b1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/docs/curl_command.sh" afterPath="$PROJECT_DIR$/docs/curl_command.sh" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseNotFoundException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseOfferingNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseOfferingNotFoundException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$DepartmentNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$DepartmentNotFoundException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$WatcherNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$WatcherNotFoundException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/CSVParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/CSVParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseOfferingNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseOfferingNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$DepartmentNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$DepartmentNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$WatcherNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$WatcherNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseOfferingList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseOfferingList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSectionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSectionList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSubSectionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSubSectionList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CustomList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CustomList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/DepartmentList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/DepartmentList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/WatcherList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/WatcherList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester$Sem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester$Sem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/myModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/myModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/CourseOfferingUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/CourseOfferingUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -28,83 +47,27 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CoursePlannerController.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CoursePlannerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="171" column="33" lean-forward="false" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="1087">
+              <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseSectionList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java">
+      <file leaf-file-name="Semester.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseSubSectionList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseSubSection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Department.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepartmentList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="134">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+              <folding>
+                <element signature="e#1797#1798#0" expanded="true" />
+                <element signature="e#1823#1824#0" expanded="true" />
+                <element signature="e#1858#1859#0" expanded="true" />
+                <element signature="e#1888#1889#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,8 +75,8 @@
       <file leaf-file-name="StudentPerSemester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="480">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#195#196#0" expanded="true" />
                 <element signature="e#230#231#0" expanded="true" />
@@ -122,6 +85,29 @@
                 <element signature="e#370#371#0" expanded="true" />
                 <element signature="e#427#428#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentPerSemesterList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/StudentPerSemesterList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1898#1899#0" expanded="true" />
+                <element signature="e#1931#1932#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -141,12 +127,12 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\n0izY\.gradle\wrapper\dists\gradle-4.0-bin\3p92xsbhik5vmig8i90n16yxc\gradle-4.0" />
+        <entry key="$PROJECT_DIR$" value="$PROJECT_DIR$/../../gradle-4.6" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
-        <entry key="$PROJECT_DIR$" value="4.0" />
+        <entry key="$PROJECT_DIR$" value="4.6" />
       </map>
     </option>
     <option name="availableProjects">
@@ -326,7 +312,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3045930814828" />
+        <entry key="$PROJECT_DIR$" value="4568917538000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="811036039" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2745808788" />
       </map>
@@ -366,6 +353,81 @@
               <option name="name" value="CoursePlannerV1" />
               <option name="projectBuildClasspath">
                 <list>
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-build-cache-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-model-core-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-model-groovy-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-build-option-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-docs-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-wrapper-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-process-services-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-installation-beacon-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-kotlin-dsl-tooling-builders-0.15.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-core-api-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-native-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/ant-launcher-1.9.9.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/groovy-all-2.4.12.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-launcher-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-core-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-messaging-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-tooling-api-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-logging-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/ant-1.9.9.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-kotlin-dsl-0.15.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-base-services-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-runtime-api-info-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-kotlin-dsl-tooling-models-0.15.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-cli-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-persistent-cache-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-base-services-groovy-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-jvm-services-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/gradle-resources-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-resources-s3-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-build-init-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-scala-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-plugin-use-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-plugins-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-composite-builds-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-maven-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-publish-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-test-kit-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-language-jvm-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-testing-native-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-resources-gcs-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-ide-play-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-build-cache-http-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-platform-base-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-version-control-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-platform-native-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-tooling-api-builders-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-workers-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-dependency-management-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-antlr-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-code-quality-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-language-groovy-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-jacoco-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-ide-native-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-language-native-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-ide-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-build-comparison-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-reporting-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-platform-play-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-ivy-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-signing-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-plugin-development-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-diagnostics-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-testing-base-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-announce-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-resources-http-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-testing-junit-platform-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-javascript-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-language-scala-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-ear-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-testing-jvm-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-platform-jvm-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-resources-sftp-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-osgi-4.6.jar" />
+                  <option value="$PROJECT_DIR$/../../gradle-4.6/lib/plugins/gradle-language-java-4.6.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -374,9 +436,6 @@
           </value>
         </entry>
       </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
     </option>
     <option name="projectSyncType">
       <map>
@@ -390,6 +449,8 @@
         <option value="$PROJECT_DIR$/docs/curl_command.sh" />
         <option value="$PROJECT_DIR$/public/watchers.html" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/StudentPerSemesterList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" />
       </list>
     </option>
@@ -406,21 +467,10 @@
     <option name="height" value="1378" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -523,23 +573,25 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -555,29 +607,12 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -587,20 +622,11 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -609,8 +635,6 @@
       <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -623,17 +647,21 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -648,9 +676,6 @@
       <projects_view />
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -662,85 +687,59 @@
       <option name="presentableId" value="Default" />
       <updated>1522965430315</updated>
       <workItem from="1522965431627" duration="6496000" />
+      <workItem from="1522972921111" duration="7084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6496000" />
+    <option name="totallyTimeSpent" value="13580000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="736" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5021322" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32943144" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3277592" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="13" sideWeight="0.5030349" side_tool="true" visible="true" weight="0.3277592" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32934782" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4969651" visible="true" weight="0.3277592" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32934782" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25417298" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3277592" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32934782" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32934782" />
+      <window_info anchor="right" id="Database" order="9" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5021322" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4978678" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -748,136 +747,66 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/about.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2400">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="107" column="24" lean-forward="false" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/curl_command.sh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="89" column="31" lean-forward="true" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/Line.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseSectionUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseOfferingUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/watchers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/graph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/watchers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-658">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scripts/graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/DepartmentUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="45">
           <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
             <element signature="e#195#196#0" expanded="true" />
@@ -890,83 +819,222 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java">
+    <entry file="file://$PROJECT_DIR$/public/about.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="189">
+          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/curl_command.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="89" column="31" lean-forward="true" selection-start-line="89" selection-start-column="31" selection-end-line="89" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseSectionUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseOfferingUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/watchers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scripts/watchers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-658" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scripts/graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/DepartmentUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1080">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseOfferingList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/StudentPerSemesterList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1858#1859#0" expanded="true" />
+            <element signature="e#1888#1889#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="171" column="33" lean-forward="false" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="1087">
+          <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
