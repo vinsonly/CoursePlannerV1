@@ -2,156 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92e1da43-b6e1-41a7-9dac-64dded2828b1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.6/fileChanges/last-build.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/StudentPerSemesterList.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/StudentPerSemester$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/StudentPerSemester.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/AboutUI.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/GraphProcessor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/AboutUI.java" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileChanges/last-build.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileChanges/last-build.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_annotations_api_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_annotations_api_8_5_28.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_19.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_19.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1.iml" afterPath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_main.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_test.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/data/course_data_2016.csv" afterPath="$PROJECT_DIR$/data/course_data_2016.csv" />
-      <change beforePath="$PROJECT_DIR$/data/course_data_2018.csv" afterPath="$PROJECT_DIR$/data/course_data_2018.csv" />
       <change beforePath="$PROJECT_DIR$/data/output_dump.txt" afterPath="$PROJECT_DIR$/data/output_dump.txt" />
-      <change beforePath="$PROJECT_DIR$/data/test.csv" afterPath="$PROJECT_DIR$/data/test.csv" />
-      <change beforePath="$PROJECT_DIR$/docs/curl_command.sh" afterPath="$PROJECT_DIR$/docs/curl_command.sh" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/Application.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/Application.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/CSVParser.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/CSVParser.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseNotFoundException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseOfferingNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseOfferingNotFoundException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$DepartmentNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$DepartmentNotFoundException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$WatcherNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$WatcherNotFoundException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/Exceptions.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/Exceptions.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseList.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseOfferingList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseOfferingList.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSectionList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSectionList.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSubSectionList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSubSectionList.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CustomList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CustomList.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/DepartmentList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/DepartmentList.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/WatcherList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/WatcherList.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course$1.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering$1.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection$1.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSubSection.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSubSection.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Department.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Department.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester$Sem.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester$Sem.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/myModel.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/myModel.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/CourseOfferingUI.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/CourseOfferingUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/CourseSectionUI.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/CourseSectionUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/CourseUI.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/CourseUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/DepartmentUI.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/DepartmentUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/Line.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/Line.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/WatcherPostUI.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/WatcherPostUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/WatcherUI.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/view/WatcherUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Observer.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Observer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher$1.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/WatcherInfo.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/WatcherInfo.class" />
-      <change beforePath="$PROJECT_DIR$/public/about.html" afterPath="$PROJECT_DIR$/public/about.html" />
-      <change beforePath="$PROJECT_DIR$/public/css/browse.css" afterPath="$PROJECT_DIR$/public/css/browse.css" />
-      <change beforePath="$PROJECT_DIR$/public/css/general.css" afterPath="$PROJECT_DIR$/public/css/general.css" />
-      <change beforePath="$PROJECT_DIR$/public/css/watchers.css" afterPath="$PROJECT_DIR$/public/css/watchers.css" />
-      <change beforePath="$PROJECT_DIR$/public/graph.html" afterPath="$PROJECT_DIR$/public/graph.html" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/scripts/about.js" afterPath="$PROJECT_DIR$/public/scripts/about.js" />
-      <change beforePath="$PROJECT_DIR$/public/scripts/browse.js" afterPath="$PROJECT_DIR$/public/scripts/browse.js" />
-      <change beforePath="$PROJECT_DIR$/public/scripts/graph.js" afterPath="$PROJECT_DIR$/public/scripts/graph.js" />
-      <change beforePath="$PROJECT_DIR$/public/scripts/watchers.js" afterPath="$PROJECT_DIR$/public/scripts/watchers.js" />
-      <change beforePath="$PROJECT_DIR$/public/watchers.html" afterPath="$PROJECT_DIR$/public/watchers.html" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/Exceptions.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/Exceptions.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseOfferingList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseOfferingList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/WatcherList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/WatcherList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Course.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Course.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseOfferingUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseOfferingUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseSectionUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseSectionUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/DepartmentUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/DepartmentUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/Line.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/Line.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherInfo.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherInfo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -193,7 +48,7 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="238">
               <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding />
             </state>
@@ -203,7 +58,7 @@
       <file leaf-file-name="GraphProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/GraphProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="1394">
               <caret line="91" column="66" lean-forward="false" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -216,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="curl_command.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="curl_command.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/curl_command.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="85" column="17" lean-forward="false" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            <state relative-caret-position="75">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="83" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -229,28 +84,8 @@
       <file leaf-file-name="output_dump.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/output_dump.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="347735">
               <caret line="20455" column="38" lean-forward="false" selection-start-line="20455" selection-start-column="38" selection-end-line="20455" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course_data_2018.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/course_data_2018.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="14251" column="90" lean-forward="false" selection-start-line="14251" selection-start-column="90" selection-end-line="14251" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course_data_2016.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/course_data_2016.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -269,7 +104,7 @@
       <file leaf-file-name="CourseOffering.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
+            <state relative-caret-position="85">
               <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
@@ -279,7 +114,7 @@
       <file leaf-file-name="CoursePlannerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
+            <state relative-caret-position="1751">
               <caret line="115" column="159" lean-forward="false" selection-start-line="115" selection-start-column="159" selection-end-line="115" selection-end-column="159" />
               <folding />
             </state>
@@ -493,7 +328,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3046157470684" />
+        <entry key="$PROJECT_DIR$" value="3046173297473" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="811036039" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2745808788" />
@@ -592,6 +427,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -668,9 +505,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -935,7 +770,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1523079041955" />
+    <option name="lastUpdateTimestamp" value="1523086742432" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -956,11 +791,12 @@
       <workItem from="1522965431627" duration="6496000" />
       <workItem from="1522972921111" duration="7084000" />
       <workItem from="1523078870159" duration="4980000" />
+      <workItem from="1523086695131" duration="126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18560000" />
+    <option name="totallyTimeSpent" value="18686000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -980,7 +816,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49814814" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -989,15 +825,15 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.4962963" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2630435" sideWeight="0.49814814" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294606" sideWeight="0.4962963" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2630435" sideWeight="0.49814814" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294606" sideWeight="0.4962963" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21002132" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1272,9 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#1170#1171#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1333,7 +1166,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
+        <state relative-caret-position="85">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
@@ -1341,7 +1174,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
+        <state relative-caret-position="1751">
           <caret line="115" column="159" lean-forward="false" selection-start-line="115" selection-start-column="159" selection-end-line="115" selection-end-column="159" />
           <folding />
         </state>
@@ -1365,7 +1198,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
+        <state relative-caret-position="238">
           <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding />
         </state>
@@ -1373,7 +1206,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/GraphProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
+        <state relative-caret-position="1394">
           <caret line="91" column="66" lean-forward="false" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1385,17 +1218,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/curl_command.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="85" column="17" lean-forward="false" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/output_dump.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="347735">
           <caret line="20455" column="38" lean-forward="false" selection-start-line="20455" selection-start-column="38" selection-end-line="20455" selection-end-column="38" />
           <folding />
         </state>
@@ -1403,8 +1228,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/course_data_2018.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="14251" column="90" lean-forward="false" selection-start-line="14251" selection-start-column="90" selection-end-line="14251" selection-end-column="90" />
+        <state relative-caret-position="340">
+          <caret line="14270" column="106" lean-forward="false" selection-start-line="14270" selection-start-column="106" selection-end-line="14270" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/curl_command.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="83" selection-end-column="37" />
           <folding />
         </state>
       </provider>

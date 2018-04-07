@@ -19133,7 +19133,7 @@ MSE 404
       1174 in SURREY by Amr Marzouk, Amr Marzouk
             Type=LEC, Enrollment=36/80
 MSE 405W
-      1154 in SURREY by Maureen Hindy, Maureen Hindy, Maureen Hindy
+      1154 in SURREY by Maureen Hindy, Maureen Hindy                  q, Maureen Hindy                  q, Maureen Hindy
             Type=LEC, Enrollment=158/200
             Type=TUT, Enrollment=125/190
       1164 in SURREY by Maureen Hindy, Maureen Hindy, Maureen Hindy, Maureen Hindy
