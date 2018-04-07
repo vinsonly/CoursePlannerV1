@@ -71,7 +71,7 @@ public class CourseSection {
 
     //insert section into courseSections, in sorted order.
     //returns true if successful, false otherwise.
-    public void insertCourseSubSection(CourseSubSection subSection) {
+    public void insertNewCourseSubSection(CourseSubSection subSection) {
         System.out.println("Inserting new sub section.");
         if(this.type.equals(subSection.getType()) == false) {
             return;
@@ -81,19 +81,32 @@ public class CourseSection {
         this.enrolmentCapacity += subSection.getEnrolmentCapacity();
         this.enrolmentTotal += subSection.getEnrolmentTotal();
 
+
+        for(String oldInstructor : this.instructors) {
+            System.out.println("oldInstructor = " + oldInstructor);
+        }
+
+
         //for each newInstructor, check if it is already one of the old instructors, else insert
         for(String newInstructor : subSection.getInstructors()) {
+            System.out.println("newInstructor = " + newInstructor);
             boolean found = false;
-            for(String oldInstructor : instructors) {
+            for(String oldInstructor : this.instructors) {
+                System.out.println("oldInstructor = " + oldInstructor);
 
                 if(newInstructor.equals(oldInstructor)) {
+                    System.out.println("instructors are equal.");
                     found = true;
                     break;
                 }
+                System.out.println("instructors are NOT equal.");
 
             }
 
+            System.out.println("found = " + found);
+
             if(found == false) {
+                System.out.println("Instructor not found.");
                 instructors.add(newInstructor);
             }
         }
@@ -159,6 +172,13 @@ public class CourseSection {
         this.type = type;
     }
 
+    public CourseSubSectionList getSubSections() {
+        return subSections;
+    }
+
+    public void setSubSections(CourseSubSectionList subSections) {
+        this.subSections = subSections;
+    }
 
     //register as an observer
     private void registerAsObserver() {

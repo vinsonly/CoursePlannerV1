@@ -40,10 +40,9 @@ public class CourseOffering {
         this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.sem = sem;
         this.location = location;
-        this.instructors = instructors;
         courseOfferingCount++;
         this.courseSections.insert(section);
-        this.instructors.addAll(section.getInstructors());
+        this.instructors = instructors;
         registerAsObserver(section);
     }
 
@@ -68,11 +67,21 @@ public class CourseOffering {
             return;
         }
 
+        for(String savedInstructor : this.instructors) {
+            System.out.println("savedInstructor = " + savedInstructor);
+        }
+        System.out.println();
+
         boolean duplicate = false;
         for(String newInstructor : newInstructors) {
+            System.out.println("newInstructor = " + newInstructor);
             int currentIndex = 0;
             for(String savedInstructor : this.instructors) {
+                System.out.println("savedInstructor = " + savedInstructor);
+
                 if(newInstructor.equals(savedInstructor)) {
+                    System.out.println("true");
+                    duplicate = true;
                     break;
                 }
 
@@ -85,8 +94,11 @@ public class CourseOffering {
                 }
             }
 
-            this.instructors.add(newInstructor);
+            if(duplicate == false) {
+                this.instructors.add(newInstructor);
+            }
         }
+
     }
 
 

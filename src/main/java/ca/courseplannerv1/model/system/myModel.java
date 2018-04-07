@@ -3,8 +3,6 @@ package ca.courseplannerv1.model.system;
 import ca.courseplannerv1.controllers.CoursePlannerController;
 import ca.courseplannerv1.model.list.DepartmentList;
 import ca.courseplannerv1.model.list.WatcherList;
-import ca.courseplannerv1.model.watchers.Observer;
-import ca.courseplannerv1.model.watchers.Watcher;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -34,7 +32,7 @@ public class myModel {
     //returns true if action successful, otherwise false
     public static boolean saveLineIntoSystem(String[] line) {
 
-        //if the line is not complete, dont save into our system
+        //if the line is not complete, don't save into our system
         if(line.length != 8) {
             return false;
         }
@@ -72,13 +70,13 @@ public class myModel {
 
                     if(thisSection != null) {
                         //insert subSection into thisSection
-                        thisSection.insertCourseSubSection(subSection);
+                        thisSection.insertNewCourseSubSection(subSection);
                     }
                     else {
                         //create a new section, insert subsection, insert section into offering
                         thisSection = new CourseSection(enrolCap, enrolTot, instructors, type);
                         thisOffering.insertCourseSection(thisSection);
-                        thisSection.insertCourseSubSection(subSection);
+                        thisSection.getSubSections().insert(subSection);
                     }
                 }
                 else {
@@ -86,7 +84,7 @@ public class myModel {
                     thisSection = new CourseSection(enrolCap, enrolTot, instructors, type);
                     thisOffering = new CourseOffering(newSem, location, instructors, thisSection);
                     thisCourse.insertNewCourseOffering(thisOffering);
-                    thisSection.insertCourseSubSection(subSection);
+                    thisSection.getSubSections().insert(subSection);
                 }
             }
             else {
@@ -95,7 +93,7 @@ public class myModel {
                 thisOffering = new CourseOffering(newSem, location, instructors, thisSection);
                 thisCourse = new Course(deptName, catalogNumber, location, thisOffering);
                 thisDept.insertNewCourse(thisCourse);
-                thisSection.insertCourseSubSection(subSection);
+                thisSection.getSubSections().insert(subSection);
             }
         }
         else {
@@ -105,7 +103,7 @@ public class myModel {
             thisCourse = new Course(deptName, catalogNumber, location, thisOffering);
             thisDept = new Department(deptName, thisCourse);
             myModel.insertNewDepartment(thisDept);
-            thisSection.insertCourseSubSection(subSection);
+            thisSection.getSubSections().insert(subSection);
         }
 
         myModel.insertions++;
