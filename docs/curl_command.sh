@@ -60,7 +60,7 @@ curl -i -s -H "Content-Type: application/json" \
 # Get graph data
 # ------------------------------
 curl -i -s -H "Content-Type: application/json" \
-    -X GET ${SERVER}/api/stats/students-per-semester?deptId=${DEPT}
+    -X GET localhost:8080/api/stats/students-per-semester?deptId=${DEPT}
 
 # error
 curl -i -s -H "Content-Type: application/json" \

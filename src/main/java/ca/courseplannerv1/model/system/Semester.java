@@ -1,6 +1,8 @@
 package ca.courseplannerv1.model.system;
 
 
+import java.util.ArrayList;
+
 public class Semester {
     private int semCode;
     private int year;
@@ -86,7 +88,7 @@ public class Semester {
                 this.sem = Semester.Sem.Spring;
                 break;
             case 4:
-                this.sem = Semester.Sem.Spring;
+                this.sem = Semester.Sem.Summer;
                 break;
             case 7:
                 this.sem = Semester.Sem.Fall;
@@ -98,4 +100,5 @@ public class Semester {
                 throw new RuntimeException("Invalid semester code inputted.");
         }
     }
+
 }

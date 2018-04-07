@@ -1,6 +1,5 @@
 package ca.courseplannerv1.controllers;
 
-import ca.courseplannerv1.model.list.CourseList;
 import ca.courseplannerv1.model.view.*;
 import ca.courseplannerv1.model.system.*;
 import ca.courseplannerv1.model.watchers.Watcher;
@@ -13,15 +12,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
+
 @RestController
 public class CoursePlannerController {
 
-    //General
-
-
     @GetMapping("/api/about")
-    public String getInfo() {
-        return "This is an awesome Course Planner written by Vinson Ly.";
+    public AboutUI getInfo() {
+        AboutUI newAboutUI = new AboutUI("Leo and Vinson's course planner app", "Leo Mai & Vinson Ly");
+        return newAboutUI;
     }
 
     @GetMapping("/api/dump-model")
@@ -166,15 +165,13 @@ public class CoursePlannerController {
     }
 
     @GetMapping("/api/stats/students-per-semester")
-    public ArrayList getStudentsPerSemester(@RequestBody long departmentId){
-        Department currentDepartment = myModel.findDepartmentById(departmentId);
-        CourseList listOfCourses = currentDepartment.getCourses();
-        for (Course currentCourse)
-        ArrayList<StudentPerSemester> studentPerSemesters = new ArrayList<>();
+    @ResponseBody
+    public ArrayList<StudentPerSemester> getStudentsPerSemester(@RequestParam("deptId") long departmentId){
+        GraphProcessor graphProcessor = new GraphProcessor();
+        graphProcessor.processGraphData(departmentId);
 
-        return studentPerSemesters;
+        return graphProcessor.getListOfLectureSeatTaken();
     }
-
 
 
     //Exception Handlers

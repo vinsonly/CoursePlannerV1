@@ -1,21 +1,34 @@
 package ca.courseplannerv1.model.system;
 
-public class StudentPerSemester {
-    int semesterCode;
-    int totalCourseTaken;
+import java.util.Comparator;
 
-    public StudentPerSemester() {
+public class StudentPerSemester {
+    private int semesterCode;
+    private int totalCoursesTaken;
+    private final int INITIALIZER = 0;
+
+    public StudentPerSemester(int semesterCode) {
+        this.semesterCode = semesterCode;
+        this.totalCoursesTaken = INITIALIZER;
     }
 
-    public int getSemester() {
+    public int getSemesterCode() {
         return semesterCode;
     }
 
-    public int getTotalCourseTaken() {
-        return totalCourseTaken;
+    public int getTotalCoursesTaken() {
+        return totalCoursesTaken;
     }
 
-    public void setTotalCourseTaken(int totalCourseTaken) {
-        this.totalCourseTaken += totalCourseTaken;
+    public void addToTotalStudent(int newStudents) {
+        this.totalCoursesTaken += newStudents;
     }
+
+    public static Comparator<StudentPerSemester> SemesterCodeComparator = new Comparator<StudentPerSemester>() {
+        @Override
+        public int compare(StudentPerSemester semester1, StudentPerSemester semester2) {
+            return semester1.getSemesterCode() - semester2.getSemesterCode();
+        }
+    };
+
 }

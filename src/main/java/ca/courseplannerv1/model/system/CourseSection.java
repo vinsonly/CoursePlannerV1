@@ -159,6 +159,7 @@ public class CourseSection {
         this.type = type;
     }
 
+
     //register as an observer
     private void registerAsObserver() {
         System.out.println("CourseSection registering ss observer for subSections");
