@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
+
 @RestController
 public class CoursePlannerController {
 
@@ -162,6 +164,14 @@ public class CoursePlannerController {
         watcher.deregisterAsObserver();
     }
 
+    @GetMapping("/api/stats/students-per-semester")
+    @ResponseBody
+    public ArrayList<StudentPerSemester> getStudentsPerSemester(@RequestParam("deptId") long departmentId){
+        GraphProcessor graphProcessor = new GraphProcessor();
+        graphProcessor.processGraphData(departmentId);
+
+        return graphProcessor.getListOfLectureSeatTaken();
+    }
 
 
     //Exception Handlers
