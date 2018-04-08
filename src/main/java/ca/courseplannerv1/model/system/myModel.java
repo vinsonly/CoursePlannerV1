@@ -164,24 +164,6 @@ public class myModel {
         return stringArrayList;
     }
 
-    //prints random information from the model to test the data that is being inputted
-    public static void printModelInfo() {
-//        System.out.println("myModel.insertions = " + myModel.insertions);
-//        System.out.println("CourseSubSection.subSectionCount = " + CourseSubSection.subSectionCount);
-//        System.out.println("CourseSection.sectionCount = " + CourseSection.sectionCount);
-//        System.out.println("CourseOffering.courseOfferingCount = " + CourseOffering.courseOfferingCount);
-//        System.out.println("Course.courseCount = " + Course.courseCount);
-//        System.out.println("Department.departmentCount = " + Department.departmentCount);
-//        System.out.println("myModel.departments.size() = " + myModel.departments.size());
-//        System.out.println("myModel.departments.get(1).getDeptName() = " + myModel.departments.get(1).getDeptName());
-//        System.out.println("myModel.departments.get(1).getCourses().size() = " + myModel.departments.get(1).getCourses().size());
-//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCatalogNumber() = " + myModel.departments.get(1).getCourses().get(1).getCatalogNumber());
-//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().size());
-//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getLocation());
-//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(0).getLocation());
-//        System.out.println("myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size() = " + myModel.departments.get(1).getCourses().get(1).getCourseOfferings().get(1).getCourseSections().size());
-    }
-
     //prints all the departments in the model
     public static void printDepartments() {
         for(Department department : departmentList) {

@@ -38,7 +38,7 @@ public class CourseSection {
 
     //parameterized constructor
     public CourseSection(int enrolmentCapacity, int enrolmentTotal, ArrayList<String> instructors, String type) {
-        System.out.println("Creating new CourseSection");
+//        System.out.println("Creating new CourseSection");
         this.courseSectionId = getAndIncrementCourseSectionId();
         this.enrolmentCapacity = enrolmentCapacity;
         this.enrolmentTotal = enrolmentTotal;
@@ -51,13 +51,13 @@ public class CourseSection {
 
     //parameterized constructor
     public CourseSection(CourseSubSection subSection) {
-        System.out.println("Creating new CourseSection");
+//        System.out.println("Creating new CourseSection");
         this.courseSectionId = getAndIncrementCourseSectionId();
         this.instructors = subSection.getInstructors();
         this.enrolmentCapacity = subSection.getEnrolmentCapacity();
         this.enrolmentTotal = subSection.getEnrolmentTotal();
         this.type = subSection.getType();
-        System.out.println("Creating new CourseSubSectionList.");
+//        System.out.println("Creating new CourseSubSectionList.");
         this.subSections = new CourseSubSectionList();
         registerAsObserver();
         this.subSections.insert(subSection);
@@ -72,7 +72,7 @@ public class CourseSection {
     //insert section into courseSections, in sorted order.
     //returns true if successful, false otherwise.
     public void insertNewCourseSubSection(CourseSubSection subSection) {
-        System.out.println("Inserting new sub section.");
+//        System.out.println("Inserting new sub section.");
         if(this.type.equals(subSection.getType()) == false) {
             return;
         }
@@ -82,31 +82,31 @@ public class CourseSection {
         this.enrolmentTotal += subSection.getEnrolmentTotal();
 
 
-        for(String oldInstructor : this.instructors) {
-            System.out.println("oldInstructor = " + oldInstructor);
-        }
+//        for(String oldInstructor : this.instructors) {
+//            System.out.println("oldInstructor = " + oldInstructor);
+//        }
 
 
         //for each newInstructor, check if it is already one of the old instructors, else insert
         for(String newInstructor : subSection.getInstructors()) {
-            System.out.println("newInstructor = " + newInstructor);
+//            System.out.println("newInstructor = " + newInstructor);
             boolean found = false;
             for(String oldInstructor : this.instructors) {
-                System.out.println("oldInstructor = " + oldInstructor);
+//                System.out.println("oldInstructor = " + oldInstructor);
 
                 if(newInstructor.equals(oldInstructor)) {
-                    System.out.println("instructors are equal.");
+//                    System.out.println("instructors are equal.");
                     found = true;
                     break;
                 }
-                System.out.println("instructors are NOT equal.");
+//                System.out.println("instructors are NOT equal.");
 
             }
 
-            System.out.println("found = " + found);
+//            System.out.println("found = " + found);
 
             if(found == false) {
-                System.out.println("Instructor not found.");
+//                System.out.println("Instructor not found.");
                 instructors.add(newInstructor);
             }
         }
@@ -182,11 +182,11 @@ public class CourseSection {
 
     //register as an observer
     private void registerAsObserver() {
-        System.out.println("CourseSection registering ss observer for subSections");
+//        System.out.println("CourseSection registering ss observer for subSections");
         subSections.addObserver(new Observer() {
             @Override
             public void stateChanged(Object obj) {
-                System.out.println("CourseSection stateChanged.");
+//                System.out.println("CourseSection stateChanged.");
                 CourseSubSection newSS = CourseSubSection.class.cast(obj);
                 WatcherInfo watcherInfo = new WatcherInfo();
                 watcherInfo.setEnrolmentCapacity(newSS.getEnrolmentCapacity());
@@ -195,7 +195,7 @@ public class CourseSection {
                 notifyObservers(watcherInfo);
             }
         });
-        System.out.println("There are now " + subSections.getObservers().size() + " observers for CourseSubSectionList.");
+//        System.out.println("There are now " + subSections.getObservers().size() + " observers for CourseSubSectionList.");
     }
 
     //make observable

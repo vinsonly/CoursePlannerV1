@@ -12,8 +12,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
-
 @RestController
 public class CoursePlannerController {
 
@@ -131,14 +129,14 @@ public class CoursePlannerController {
     @PostMapping("/api/watchers")
     @ResponseStatus(HttpStatus.CREATED)
     public WatcherUI createWatcher(@RequestBody String watcherPostUIJSON) {
-        System.out.println(watcherPostUIJSON);
+//        System.out.println(watcherPostUIJSON);
 
         Gson gson = new Gson();
 
         WatcherPostUI watcherPostUI = gson.fromJson(watcherPostUIJSON, WatcherPostUI.class);
 
-        System.out.println(watcherPostUI.getDeptId());
-        System.out.println(watcherPostUI.getCourseId());
+//        System.out.println(watcherPostUI.getDeptId());
+//        System.out.println(watcherPostUI.getCourseId());
 
         Watcher newWatcher = new Watcher(watcherPostUI.getDeptId(), watcherPostUI.getCourseId());
 

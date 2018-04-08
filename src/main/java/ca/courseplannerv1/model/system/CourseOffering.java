@@ -35,7 +35,7 @@ public class CourseOffering {
 
     //parametrized contrusctor
     public CourseOffering(Semester sem, String location, ArrayList<String> instructors, CourseSection section) {
-        System.out.println("Creating new CourseOffering.");
+//        System.out.println("Creating new CourseOffering.");
         this.courseSections = new CourseSectionList();
         this.courseOfferingId = getAndIncrementCourseOfferingId();
         this.sem = sem;
@@ -67,20 +67,20 @@ public class CourseOffering {
             return;
         }
 
-        for(String savedInstructor : this.instructors) {
-            System.out.println("savedInstructor = " + savedInstructor);
-        }
-        System.out.println();
+//        for(String savedInstructor : this.instructors) {
+//            System.out.println("savedInstructor = " + savedInstructor);
+//        }
+//        System.out.println();
 
         boolean duplicate = false;
         for(String newInstructor : newInstructors) {
-            System.out.println("newInstructor = " + newInstructor);
+//            System.out.println("newInstructor = " + newInstructor);
             int currentIndex = 0;
             for(String savedInstructor : this.instructors) {
-                System.out.println("savedInstructor = " + savedInstructor);
+//                System.out.println("savedInstructor = " + savedInstructor);
 
                 if(newInstructor.equals(savedInstructor)) {
-                    System.out.println("true");
+//                    System.out.println("true");
                     duplicate = true;
                     break;
                 }
@@ -179,11 +179,11 @@ public class CourseOffering {
 
     //register as an observer
     private void registerAsObserver(CourseSection courseSection) {
-        System.out.println("Registering as observer for courseSection");
+//        System.out.println("Registering as observer for courseSection");
         courseSection.addObserver(new Observer() {
             @Override
             public void stateChanged(Object obj) {
-                System.out.println("CourseOffering stateChanged.");
+//                System.out.println("CourseOffering stateChanged.");
 
                 WatcherInfo watcherInfo = WatcherInfo.class.cast(obj);
                 watcherInfo.setSemester(sem.getSem().toString());
@@ -202,7 +202,7 @@ public class CourseOffering {
     }
 
     private void notifyObservers(Object obj) {
-        System.out.println("SubSection notifying observers.");
+//        System.out.println("SubSection notifying observers.");
         for(Observer observer : observers) {
             observer.stateChanged(obj);
         }

@@ -46,7 +46,7 @@ public class Department {
 
     //parametrized constructor
     public Department(String deptName, Course course) {
-        System.out.println("Creating new Department");
+//        System.out.println("Creating new Department");
         this.courses = new CourseList();
         courses.insert(course);
         this.deptId = getAndIncrementDeptId();

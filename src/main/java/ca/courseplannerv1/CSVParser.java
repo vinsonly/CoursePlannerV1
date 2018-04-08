@@ -54,55 +54,6 @@ public class CSVParser {
 
                 String[] line = lineToStringArray(currentLine);
 
-//                String text = new String();
-//                String[] line = new String[8];
-//                int wordCount = 0;
-//                boolean isMultiString = false;
-//
-////                split the string up divided by ","
-//                for(i = 0; i < currentLine.length(); i++) {
-//
-//                    if(currentLine.charAt(i) == ',' && (isMultiString == false)) {
-//
-//                        text = text.trim();
-//
-//                        //save the text into line
-//                        line[wordCount] = text;
-//
-//                        //increment wordCount
-//                        wordCount++;
-//
-//                        //reset text
-//                        text = new String();
-//
-//                    //check if this is a start or end of a multi string
-//                    } else if(currentLine.charAt(i) == '"') {
-//
-//                        isMultiString = !isMultiString;
-//
-//                    //check if this character is the last character in the line
-//                    } else if(i == (currentLine.length() - 1)) {
-//                        //save the character into text
-//                        text = text + currentLine.charAt(i);
-//
-//                        text = text.trim();
-//
-//                        //save the text into line
-//                        line[wordCount] = text;
-//
-//                        //reset wordCount
-//                        wordCount = 0;
-//
-//                        //reset text
-//                        text = new String();
-//                    }
-//                    else {
-//                        //save the character into text
-//                        text = text + currentLine.charAt(i);
-//                    }
-//
-//                }
-
 
                 //save the current line into myModel
                 myModel.saveLineIntoSystem(line);
@@ -115,7 +66,7 @@ public class CSVParser {
 
 
         } catch (FileNotFoundException e) {
-            System.out.println();
+//            System.out.println();
             e.printStackTrace();
         }
 
@@ -176,9 +127,5 @@ public class CSVParser {
         return line;
 
     }
-
-
-
-
 
 }

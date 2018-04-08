@@ -95,8 +95,8 @@ public class Semester {
                 break;
             default:
                 //throw exception
-                System.out.println("Invalid input for setSem.");
-                System.out.println("intSem = " + intSem);
+//                System.out.println("Invalid input for setSem.");
+//                System.out.println("intSem = " + intSem);
                 throw new RuntimeException("Invalid semester code inputted.");
         }
     }

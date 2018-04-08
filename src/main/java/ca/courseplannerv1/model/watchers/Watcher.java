@@ -22,7 +22,7 @@ public class Watcher {
     private Observer observer;
 
     public Watcher(Department department, Course course) {
-        getAndIncrementWatcherId();
+        incrementAndGetWatcherId();
         this.department = department;
         this.course = course;
         this.events = new ArrayList<>();
@@ -31,7 +31,7 @@ public class Watcher {
     }
 
     public Watcher(long deptId, long courseId) {
-        getAndIncrementWatcherId();
+        incrementAndGetWatcherId();
         this.department = myModel.departmentList.findDepartmentByDeptId(deptId);
         this.course = this.department.findCourseByCourseId(courseId);
         this.events = new ArrayList<>();
@@ -39,8 +39,8 @@ public class Watcher {
         registerAsObserver();
     }
 
-    public long getAndIncrementWatcherId() {
-        this.watcherId = Watcher.nextWatcherId.getAndIncrement();
+    public long incrementAndGetWatcherId() {
+        this.watcherId = Watcher.nextWatcherId.incrementAndGet();
         return watcherId;
     }
 
@@ -48,7 +48,7 @@ public class Watcher {
         Observer newObserver = new Observer() {
             @Override
             public void stateChanged(Object obj) {
-                System.out.println("Watcher stateChanged.");
+//                System.out.println("Watcher stateChanged.");
                 WatcherInfo watcherInfo = WatcherInfo.class.cast(obj);
                 addedCourseEvent(watcherInfo);
             }
@@ -76,7 +76,7 @@ public class Watcher {
                 ") to offering " + watcherInfo.getSemester() + " " +
                 watcherInfo.getYear();
         //call endpoint
-        System.out.println(event);
+//        System.out.println(event);
         this.events.add(event);
 
 

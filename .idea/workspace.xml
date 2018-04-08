@@ -1,7 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6a29e78-69f2-4513-9b8b-3a743f3fb0af" name="Default" comment="" />
+    <list default="true" id="b6a29e78-69f2-4513-9b8b-3a743f3fb0af" name="Default" comment="finished product, start watcher id at 1, set gradle version to 4.5.1 so exceptions are printed in endpoints.">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/built.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties.lock" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_1_11.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_27.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_validator_5_3_6_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_1_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_1_5_10_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_1_5_10_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_1_5_10_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_1_5_10_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_1_5_10_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_1_5_10_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_4_3_14_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_4_3_14_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_4_3_14_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_4_3_14_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_3_14_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_4_3_14_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_4_3_14_RELEASE.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_17.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/docs/curl_command.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/StudentPerSemesterList.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/GraphProcessor.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/StudentPerSemester$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/StudentPerSemester.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/GraphProcessor.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_2.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_27.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_27.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_annotations_api_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_tomcat_annotations_api_8_5_27.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_1_19.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1.iml" afterPath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/CoursePlannerV1_test.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/data/course_data_2016.csv" afterPath="$PROJECT_DIR$/data/course_data_2016.csv" />
+      <change beforePath="$PROJECT_DIR$/data/course_data_2018.csv" afterPath="$PROJECT_DIR$/data/course_data_2018.csv" />
+      <change beforePath="$PROJECT_DIR$/data/output_dump.txt" afterPath="$PROJECT_DIR$/data/output_dump.txt" />
+      <change beforePath="$PROJECT_DIR$/data/test.csv" afterPath="$PROJECT_DIR$/data/test.csv" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/Application.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/Application.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/CSVParser.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/CSVParser.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseNotFoundException.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseOfferingNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$CourseOfferingNotFoundException.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$DepartmentNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$DepartmentNotFoundException.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$WatcherNotFoundException.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController$WatcherNotFoundException.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/CoursePlannerController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/controllers/Exceptions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSubSectionList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CourseSubSectionList.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CustomList.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/list/CustomList.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course$1.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Course.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering$1.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseOffering.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection$1.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/CourseSection.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Department.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Department.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester$Sem.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester$Sem.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/Semester.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/myModel.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/system/myModel.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher$1.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher.class" afterPath="$PROJECT_DIR$/out/production/classes/ca/courseplannerv1/model/watchers/Watcher.class" />
+      <change beforePath="$PROJECT_DIR$/public/about.html" afterPath="$PROJECT_DIR$/public/about.html" />
+      <change beforePath="$PROJECT_DIR$/public/css/browse.css" afterPath="$PROJECT_DIR$/public/css/browse.css" />
+      <change beforePath="$PROJECT_DIR$/public/css/general.css" afterPath="$PROJECT_DIR$/public/css/general.css" />
+      <change beforePath="$PROJECT_DIR$/public/css/watchers.css" afterPath="$PROJECT_DIR$/public/css/watchers.css" />
+      <change beforePath="$PROJECT_DIR$/public/graph.html" afterPath="$PROJECT_DIR$/public/graph.html" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change beforePath="$PROJECT_DIR$/public/scripts/about.js" afterPath="$PROJECT_DIR$/public/scripts/about.js" />
+      <change beforePath="$PROJECT_DIR$/public/scripts/browse.js" afterPath="$PROJECT_DIR$/public/scripts/browse.js" />
+      <change beforePath="$PROJECT_DIR$/public/scripts/graph.js" afterPath="$PROJECT_DIR$/public/scripts/graph.js" />
+      <change beforePath="$PROJECT_DIR$/public/scripts/watchers.js" afterPath="$PROJECT_DIR$/public/scripts/watchers.js" />
+      <change beforePath="$PROJECT_DIR$/public/watchers.html" afterPath="$PROJECT_DIR$/public/watchers.html" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/Exceptions.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseOfferingList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseOfferingList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/WatcherList.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/WatcherList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Course.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Course.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/AboutUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/AboutUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseOfferingUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseOfferingUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseSectionUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseSectionUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/DepartmentUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/DepartmentUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/Line.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/Line.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherUI.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherInfo.java" afterPath="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherInfo.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -34,19 +189,29 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CoursePlannerV1" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="CoursePlannerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1751">
-              <caret line="113" column="72" lean-forward="false" selection-start-line="113" selection-start-column="72" selection-end-line="113" selection-end-column="72" />
+            <state relative-caret-position="459">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
-                <element signature="e#6523#6524#0" expanded="true" />
-                <element signature="e#6565#6566#0" expanded="true" />
-                <element signature="e#7733#7734#0" expanded="true" />
-                <element signature="e#7778#7779#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,104 +219,19 @@
       <file leaf-file-name="myModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="77" column="37" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+            <state relative-caret-position="1128">
+              <caret line="289" column="0" lean-forward="false" selection-start-line="289" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseOffering.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
-              <folding>
-                <element signature="e#4976#4977#0" expanded="true" />
-                <element signature="e#5010#5011#0" expanded="true" />
-                <element signature="e#5075#5076#0" expanded="true" />
-                <element signature="e#5121#5122#0" expanded="true" />
-                <element signature="e#5162#5163#0" expanded="true" />
-                <element signature="e#5201#5202#0" expanded="true" />
-                <element signature="e#5263#5264#0" expanded="true" />
-                <element signature="e#5319#5320#0" expanded="true" />
-                <element signature="e#5351#5352#0" expanded="true" />
-                <element signature="e#5377#5378#0" expanded="true" />
-                <element signature="e#5417#5418#0" expanded="true" />
-                <element signature="e#5447#5448#0" expanded="true" />
-                <element signature="e#5482#5483#0" expanded="true" />
-                <element signature="e#5513#5514#0" expanded="true" />
-                <element signature="e#5561#5562#0" expanded="true" />
-                <element signature="e#5601#5602#0" expanded="true" />
-                <element signature="e#5653#5654#0" expanded="true" />
-                <element signature="e#5690#5691#0" expanded="true" />
-                <element signature="e#5761#5762#0" expanded="true" />
-                <element signature="e#5813#5814#0" expanded="true" />
-                <element signature="e#6576#6577#0" expanded="true" />
-                <element signature="e#6615#6616#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseSection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="105" column="51" lean-forward="false" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
-              <folding>
-                <element signature="e#4523#4524#0" expanded="true" />
-                <element signature="e#4586#4587#0" expanded="true" />
-                <element signature="e#5041#5042#0" expanded="true" />
-                <element signature="e#5079#5080#0" expanded="true" />
-                <element signature="e#5139#5140#0" expanded="true" />
-                <element signature="e#5193#5194#0" expanded="true" />
-                <element signature="e#5234#5235#0" expanded="true" />
-                <element signature="e#5274#5275#0" expanded="true" />
-                <element signature="e#5337#5338#0" expanded="true" />
-                <element signature="e#5395#5396#0" expanded="true" />
-                <element signature="e#5433#5434#0" expanded="true" />
-                <element signature="e#5470#5471#0" expanded="true" />
-                <element signature="e#5527#5528#0" expanded="true" />
-                <element signature="e#5579#5580#0" expanded="true" />
-                <element signature="e#5628#5629#0" expanded="true" />
-                <element signature="e#5662#5663#0" expanded="true" />
-                <element signature="e#5727#5728#0" expanded="true" />
-                <element signature="e#5773#5774#0" expanded="true" />
-                <element signature="e#5804#5805#0" expanded="true" />
-                <element signature="e#5831#5832#0" expanded="true" />
-                <element signature="e#5871#5872#0" expanded="true" />
-                <element signature="e#5903#5904#0" expanded="true" />
-                <element signature="e#5955#5956#0" expanded="true" />
-                <element signature="e#5989#5990#0" expanded="true" />
-                <element signature="e#6057#6058#0" expanded="true" />
-                <element signature="e#6103#6104#0" expanded="true" />
-                <element signature="e#7124#7125#0" expanded="true" />
-                <element signature="e#7163#7164#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseSubSectionList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="204">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-              <folding>
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1049#1050#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -161,16 +241,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
               <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,25 +251,37 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1112#1113#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1223#1224#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1296#1297#0" expanded="true" />
-                <element signature="e#1351#1352#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Watcher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WatcherInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -206,7 +289,7 @@
       <file leaf-file-name="Line.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/Line.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="-402">
               <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding />
             </state>
@@ -231,6 +314,8 @@
       <find>departments.</find>
       <find>isequal</find>
       <find>register</find>
+      <find>System.out.println</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -239,12 +324,12 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Gradle\gradle-4.6" />
+        <entry key="$PROJECT_DIR$" value="C:\Gradle\gradle-4.5.1" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
-        <entry key="$PROJECT_DIR$" value="4.6" />
+        <entry key="$PROJECT_DIR$" value="4.5.1" />
       </map>
     </option>
     <option name="availableProjects">
@@ -318,11 +403,6 @@
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="bootJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="jar" />
@@ -353,7 +433,17 @@
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Runs this project as a Spring Boot application." />
+                <option name="description" value="Displays the dependency management declared in root project 'CoursePlannerV1'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyManagement" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Repackage existing JAR and WAR archives so that they can be executed from the command line using 'java -jar'" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootRepackage" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run the project with support for auto-detecting main class and reloading static resources" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="bootRun" />
               </ExternalTaskPojo>
@@ -408,6 +498,10 @@
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="findMainClass" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildNeeded" />
@@ -424,8 +518,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3044329553152" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="811036039" />
+        <entry key="$PROJECT_DIR$" value="3046337026982" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1436031587" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2745808788" />
       </map>
     </option>
@@ -441,18 +535,16 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.0.RELEASE/d88527da7e6f0c0413cb3aaa0b40b8fd5935078f/spring-boot-gradle-plugin-2.0.0.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.0.RELEASE/2383b6249166ace67896b030dbedd04a4c5f9e0a/spring-boot-gradle-plugin-2.0.0.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.0.RELEASE/965442c239a8bab04d703a20fbe5ca06662932cb/spring-boot-loader-tools-2.0.0.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.0.RELEASE/4028160dac97d34f0851f3aa9b87a0c3877d630a/spring-boot-loader-tools-2.0.0.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/1.5.10.RELEASE/1ec12545970356c867b330319c17fbe88095383b/spring-boot-gradle-plugin-1.5.10.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/1.5.10.RELEASE/9b2a9e4d0021ca3ff8ab6689a42df20f94ece41/spring-boot-gradle-plugin-1.5.10.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/1.5.10.RELEASE/10108d98101e646028b493bbb39e9c97674db7c/spring-boot-loader-tools-1.5.10.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/1.5.10.RELEASE/1defe7e7f9d7f6d03aa7f93d21cfd20e67e4a0f6/spring-boot-loader-tools-1.5.10.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.4.RELEASE/f56e13eea5c5d3640efb34dc0f55b1369000fe32/dependency-management-plugin-1.0.4.RELEASE-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.4.RELEASE/f5b1df47ed5f708faa4d2fe0a71eb7fd36e11696/dependency-management-plugin-1.0.4.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/43a23e357fa7b187c261520914c0b001ea1a62a2/commons-compress-1.14-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/7b18320d668ab080758bf5383d6d8fcf750babce/commons-compress-1.14.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.4.RELEASE/4c83662d0a602b46635de6562750d44c397aad41/spring-core-5.0.4.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.4.RELEASE/2221a957b5561a34f044350ba4e30ef5870254a3/spring-core-5.0.4.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.4.RELEASE/1d86d46692a78817d638e5a9e524400a8db13c34/spring-jcl-5.0.4.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.4.RELEASE/3053e2bad0a18571bdbb9596ce51f9d458f5934f/spring-jcl-5.0.4.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.14.RELEASE/89a3dd5902381363686fa8fb737e3c028cedca53/spring-core-4.3.14.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.14.RELEASE/c70ddb6204457a802d1f6882d65bca3e5b3c41df/spring-core-4.3.14.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$" />
@@ -464,81 +556,80 @@
               <option name="name" value="CoursePlannerV1" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="C:/Gradle/gradle-4.6/lib/ant-1.9.9.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/ant-launcher-1.9.9.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-base-services-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-base-services-groovy-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-build-cache-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-build-option-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-cli-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-core-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-core-api-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-docs-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-installation-beacon-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-jvm-services-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-kotlin-dsl-0.15.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-kotlin-dsl-tooling-builders-0.15.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-kotlin-dsl-tooling-models-0.15.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-launcher-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-logging-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-messaging-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-model-core-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-model-groovy-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-persistent-cache-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-process-services-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-resources-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-runtime-api-info-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-tooling-api-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-wrapper-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/groovy-all-2.4.12.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-announce-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-antlr-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-build-cache-http-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-build-comparison-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-build-init-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-code-quality-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-composite-builds-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-dependency-management-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-diagnostics-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ear-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ide-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ide-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ide-play-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ivy-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-jacoco-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-javascript-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-groovy-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-java-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-jvm-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-scala-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-maven-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-osgi-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-platform-base-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-platform-jvm-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-platform-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-platform-play-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-plugin-development-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-plugin-use-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-plugins-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-publish-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-reporting-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-resources-gcs-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-resources-http-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-resources-s3-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-resources-sftp-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-scala-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-signing-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-test-kit-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-testing-base-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-testing-junit-platform-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-testing-jvm-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-testing-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-tooling-api-builders-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-version-control-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-workers-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/ant-1.9.9.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/ant-launcher-1.9.9.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-base-services-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-base-services-groovy-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-build-cache-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-build-option-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-cli-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-core-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-core-api-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-docs-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-installation-beacon-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-jvm-services-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-kotlin-dsl-0.14.2.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-kotlin-dsl-tooling-builders-0.14.2.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-kotlin-dsl-tooling-models-0.14.2.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-launcher-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-logging-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-messaging-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-model-core-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-model-groovy-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-native-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-persistent-cache-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-process-services-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-resources-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-runtime-api-info-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-tooling-api-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/gradle-wrapper-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/groovy-all-2.4.12.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-announce-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-antlr-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-build-cache-http-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-build-comparison-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-build-init-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-code-quality-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-composite-builds-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-dependency-management-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-diagnostics-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-ear-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-ide-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-ide-native-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-ide-play-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-ivy-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-jacoco-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-javascript-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-language-groovy-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-language-java-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-language-jvm-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-language-native-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-language-scala-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-maven-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-osgi-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-platform-base-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-platform-jvm-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-platform-native-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-platform-play-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-plugin-development-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-plugin-use-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-plugins-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-publish-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-reporting-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-resources-gcs-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-resources-http-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-resources-s3-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-resources-sftp-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-scala-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-signing-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-test-kit-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-testing-base-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-testing-jvm-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-testing-native-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-tooling-api-builders-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-version-control-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/gradle-workers-4.5.1.jar" />
+                  <option value="C:/Gradle/gradle-4.5.1/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -569,13 +660,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/CourseOffering.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/CourseSection.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/CourseSectionLite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/Line.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/Watcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/Observer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/lite/CourseLite.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/lite/CourseOfferingLite.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/lite/CourseSectionLite.java" />
@@ -591,34 +679,37 @@
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/UI/Line.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseOfferingList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherAggregate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/WatcherList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/AboutUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Course.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1688" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1066" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -636,10 +727,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -650,7 +741,13 @@
             <path>
               <item name="CoursePlannerV1" type="b2602c69:ProjectViewProjectNode" />
               <item name="CoursePlannerV1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoursePlannerV1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoursePlannerV1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="4.6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CoursePlannerV1" type="b2602c69:ProjectViewProjectNode" />
@@ -746,7 +843,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TicTacToe Assignment 4.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -999,37 +1097,37 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1688" y="-8" width="1696" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32790446" sideWeight="0.49755502" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.502445" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22019334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3572204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867885" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22066015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991472" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991472" sideWeight="0.5056543" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.49755502" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867885" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1077,33 +1175,16 @@
     <MESSAGE value="Added new event to watcher event list when new offering was added." />
     <MESSAGE value="fixed /api/about endpoint" />
     <MESSAGE value="fixed bug in CourseOffering where identical instructors were being added multiple times&#10;fixed bug in CourseSection &amp; myModel where the enrolmentTotals and enrolmentCap's were being added twice." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug in CourseOffering where identical instructors were being added multiple times&#10;fixed bug in CourseSection &amp; myModel where the enrolmentTotals and enrolmentCap's were being added twice." />
+    <MESSAGE value="finished product, start watcher id at 1, set gradle version to 4.5.1 so exceptions are printed in endpoints." />
+    <option name="LAST_COMMIT_MESSAGE" value="finished product, start watcher id at 1, set gradle version to 4.5.1 so exceptions are printed in endpoints." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1124,34 +1205,35 @@
         <state relative-caret-position="425">
           <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
-            <element signature="e#4523#4524#0" expanded="true" />
-            <element signature="e#4586#4587#0" expanded="true" />
-            <element signature="e#5041#5042#0" expanded="true" />
-            <element signature="e#5079#5080#0" expanded="true" />
-            <element signature="e#5139#5140#0" expanded="true" />
-            <element signature="e#5193#5194#0" expanded="true" />
-            <element signature="e#5234#5235#0" expanded="true" />
-            <element signature="e#5274#5275#0" expanded="true" />
-            <element signature="e#5337#5338#0" expanded="true" />
-            <element signature="e#5395#5396#0" expanded="true" />
-            <element signature="e#5433#5434#0" expanded="true" />
-            <element signature="e#5470#5471#0" expanded="true" />
-            <element signature="e#5527#5528#0" expanded="true" />
-            <element signature="e#5579#5580#0" expanded="true" />
-            <element signature="e#5628#5629#0" expanded="true" />
-            <element signature="e#5662#5663#0" expanded="true" />
-            <element signature="e#5727#5728#0" expanded="true" />
-            <element signature="e#5773#5774#0" expanded="true" />
-            <element signature="e#5804#5805#0" expanded="true" />
-            <element signature="e#5831#5832#0" expanded="true" />
-            <element signature="e#5871#5872#0" expanded="true" />
-            <element signature="e#5903#5904#0" expanded="true" />
-            <element signature="e#5955#5956#0" expanded="true" />
-            <element signature="e#5989#5990#0" expanded="true" />
-            <element signature="e#6057#6058#0" expanded="true" />
-            <element signature="e#6103#6104#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7163#7164#0" expanded="true" />
+            <element signature="e#4549#4550#0" expanded="true" />
+            <element signature="e#4612#4613#0" expanded="true" />
+            <element signature="e#5067#5068#0" expanded="true" />
+            <element signature="e#5105#5106#0" expanded="true" />
+            <element signature="e#5165#5166#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5260#5261#0" expanded="true" />
+            <element signature="e#5300#5301#0" expanded="true" />
+            <element signature="e#5363#5364#0" expanded="true" />
+            <element signature="e#5421#5422#0" expanded="true" />
+            <element signature="e#5459#5460#0" expanded="true" />
+            <element signature="e#5496#5497#0" expanded="true" />
+            <element signature="e#5553#5554#0" expanded="true" />
+            <element signature="e#5605#5606#0" expanded="true" />
+            <element signature="e#5654#5655#0" expanded="true" />
+            <element signature="e#5688#5689#0" expanded="true" />
+            <element signature="e#5753#5754#0" expanded="true" />
+            <element signature="e#5799#5800#0" expanded="true" />
+            <element signature="e#5830#5831#0" expanded="true" />
+            <element signature="e#5857#5858#0" expanded="true" />
+            <element signature="e#5897#5898#0" expanded="true" />
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5981#5982#0" expanded="true" />
+            <element signature="e#6015#6016#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6129#6130#0" expanded="true" />
+            <element signature="e#7156#7157#0" expanded="true" />
+            <element signature="e#7195#7196#0" expanded="true" />
+            <marker date="1523172394943" expanded="true" signature="6898:7020" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1175,16 +1257,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/MakeSpringPrettyPrintJSON.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="123" column="63" lean-forward="false" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/course_data_2018.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1213,34 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/DepartmentManager.java" />
     <entry file="file://$PROJECT_DIR$/data/output_dump.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1252,65 +1296,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/lists.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/CourseListObserver.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/DepartmentListObserver.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="53" column="26" lean-forward="false" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherAggregate.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java">
+    <entry file="file://$PROJECT_DIR$/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding>
-            <element signature="e#1993#1994#0" expanded="false" />
-            <element signature="e#2045#2046#0" expanded="false" />
-            <element signature="e#3166#3167#0" expanded="false" />
-            <element signature="e#3219#3220#0" expanded="false" />
-            <element signature="e#3253#3254#0" expanded="false" />
-            <element signature="e#3285#3286#0" expanded="false" />
-            <element signature="e#3333#3334#0" expanded="false" />
-            <element signature="e#3375#3376#0" expanded="false" />
-            <element signature="e#3419#3420#0" expanded="false" />
-            <element signature="e#3448#3449#0" expanded="false" />
-            <element signature="e#3503#3504#0" expanded="false" />
-            <element signature="e#3539#3540#0" expanded="false" />
-            <element signature="e#3572#3573#0" expanded="false" />
-            <element signature="e#3601#3602#0" expanded="false" />
-            <element signature="e#3645#3646#0" expanded="false" />
-            <element signature="e#3681#3682#0" expanded="false" />
-            <element signature="e#3722#3723#0" expanded="false" />
-            <element signature="e#3755#3756#0" expanded="false" />
-            <element signature="e#3811#3812#0" expanded="false" />
-            <element signature="e#3855#3856#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1322,60 +1321,195 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/CSVParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-329">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="50" column="43" lean-forward="false" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+        <state relative-caret-position="419">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseOfferingList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="578">
+          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSectionList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="589">
+          <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="75" column="30" lean-forward="false" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/DepartmentList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/WatcherList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="49" column="74" lean-forward="false" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
+        <state relative-caret-position="-142">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="145" column="26" lean-forward="false" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1451">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#4992#4993#0" expanded="true" />
+            <element signature="e#5026#5027#0" expanded="true" />
+            <element signature="e#5091#5092#0" expanded="true" />
+            <element signature="e#5137#5138#0" expanded="true" />
+            <element signature="e#5178#5179#0" expanded="true" />
+            <element signature="e#5217#5218#0" expanded="true" />
+            <element signature="e#5279#5280#0" expanded="true" />
+            <element signature="e#5335#5336#0" expanded="true" />
+            <element signature="e#5367#5368#0" expanded="true" />
+            <element signature="e#5393#5394#0" expanded="true" />
+            <element signature="e#5433#5434#0" expanded="true" />
+            <element signature="e#5463#5464#0" expanded="true" />
+            <element signature="e#5498#5499#0" expanded="true" />
+            <element signature="e#5529#5530#0" expanded="true" />
+            <element signature="e#5577#5578#0" expanded="true" />
+            <element signature="e#5617#5618#0" expanded="true" />
+            <element signature="e#5669#5670#0" expanded="true" />
+            <element signature="e#5706#5707#0" expanded="true" />
+            <element signature="e#5777#5778#0" expanded="true" />
+            <element signature="e#5829#5830#0" expanded="true" />
+            <element signature="e#6596#6597#0" expanded="true" />
+            <element signature="e#6635#6636#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="188" column="34" lean-forward="false" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="34" />
+          <folding>
+            <element signature="e#4549#4550#0" expanded="true" />
+            <element signature="e#4612#4613#0" expanded="true" />
+            <element signature="e#5067#5068#0" expanded="true" />
+            <element signature="e#5105#5106#0" expanded="true" />
+            <element signature="e#5165#5166#0" expanded="true" />
+            <element signature="e#5219#5220#0" expanded="true" />
+            <element signature="e#5260#5261#0" expanded="true" />
+            <element signature="e#5300#5301#0" expanded="true" />
+            <element signature="e#5363#5364#0" expanded="true" />
+            <element signature="e#5421#5422#0" expanded="true" />
+            <element signature="e#5459#5460#0" expanded="true" />
+            <element signature="e#5496#5497#0" expanded="true" />
+            <element signature="e#5553#5554#0" expanded="true" />
+            <element signature="e#5605#5606#0" expanded="true" />
+            <element signature="e#5654#5655#0" expanded="true" />
+            <element signature="e#5688#5689#0" expanded="true" />
+            <element signature="e#5753#5754#0" expanded="true" />
+            <element signature="e#5799#5800#0" expanded="true" />
+            <element signature="e#5830#5831#0" expanded="true" />
+            <element signature="e#5857#5858#0" expanded="true" />
+            <element signature="e#5897#5898#0" expanded="true" />
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5981#5982#0" expanded="true" />
+            <element signature="e#6015#6016#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6129#6130#0" expanded="true" />
+            <element signature="e#7156#7157#0" expanded="true" />
+            <element signature="e#7195#7196#0" expanded="true" />
+            <marker date="1523172394943" expanded="true" signature="6898:7020" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSubSection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/GraphProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="88" column="17" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Semester.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="97" column="34" lean-forward="false" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/StudentPerSemester.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1383,22 +1517,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/AboutUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#347#348#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-            <element signature="e#431#432#0" expanded="false" />
-            <element signature="e#468#469#0" expanded="false" />
-            <element signature="e#501#502#0" expanded="false" />
-            <element signature="e#553#554#0" expanded="false" />
-            <element signature="e#597#598#0" expanded="false" />
-          </folding>
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/CourseOfferingUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-470">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
@@ -1430,8 +1556,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/Line.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="-402">
           <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1440,158 +1574,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/view/WatcherPostUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CustomList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-          <folding>
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1049#1050#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/list/CourseSubSectionList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/Course.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Observer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1803">
-          <caret line="164" column="79" lean-forward="false" selection-start-line="164" selection-start-column="79" selection-end-line="164" selection-end-column="79" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseSection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/WatcherInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="105" column="51" lean-forward="false" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="51" />
-          <folding>
-            <element signature="e#4523#4524#0" expanded="true" />
-            <element signature="e#4586#4587#0" expanded="true" />
-            <element signature="e#5041#5042#0" expanded="true" />
-            <element signature="e#5079#5080#0" expanded="true" />
-            <element signature="e#5139#5140#0" expanded="true" />
-            <element signature="e#5193#5194#0" expanded="true" />
-            <element signature="e#5234#5235#0" expanded="true" />
-            <element signature="e#5274#5275#0" expanded="true" />
-            <element signature="e#5337#5338#0" expanded="true" />
-            <element signature="e#5395#5396#0" expanded="true" />
-            <element signature="e#5433#5434#0" expanded="true" />
-            <element signature="e#5470#5471#0" expanded="true" />
-            <element signature="e#5527#5528#0" expanded="true" />
-            <element signature="e#5579#5580#0" expanded="true" />
-            <element signature="e#5628#5629#0" expanded="true" />
-            <element signature="e#5662#5663#0" expanded="true" />
-            <element signature="e#5727#5728#0" expanded="true" />
-            <element signature="e#5773#5774#0" expanded="true" />
-            <element signature="e#5804#5805#0" expanded="true" />
-            <element signature="e#5831#5832#0" expanded="true" />
-            <element signature="e#5871#5872#0" expanded="true" />
-            <element signature="e#5903#5904#0" expanded="true" />
-            <element signature="e#5955#5956#0" expanded="true" />
-            <element signature="e#5989#5990#0" expanded="true" />
-            <element signature="e#6057#6058#0" expanded="true" />
-            <element signature="e#6103#6104#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7163#7164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="113" column="72" lean-forward="false" selection-start-line="113" selection-start-column="72" selection-end-line="113" selection-end-column="72" />
-          <folding>
-            <element signature="e#6523#6524#0" expanded="true" />
-            <element signature="e#6565#6566#0" expanded="true" />
-            <element signature="e#7733#7734#0" expanded="true" />
-            <element signature="e#7778#7779#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="257">
+          <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/myModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="77" column="37" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+        <state relative-caret-position="1128">
+          <caret line="289" column="0" lean-forward="false" selection-start-line="289" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/system/CourseOffering.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+        <state relative-caret-position="204">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/model/watchers/Watcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="68" column="31" lean-forward="true" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ca/courseplannerv1/controllers/CoursePlannerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
-            <element signature="e#4976#4977#0" expanded="true" />
-            <element signature="e#5010#5011#0" expanded="true" />
-            <element signature="e#5075#5076#0" expanded="true" />
-            <element signature="e#5121#5122#0" expanded="true" />
-            <element signature="e#5162#5163#0" expanded="true" />
-            <element signature="e#5201#5202#0" expanded="true" />
-            <element signature="e#5263#5264#0" expanded="true" />
-            <element signature="e#5319#5320#0" expanded="true" />
-            <element signature="e#5351#5352#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#5417#5418#0" expanded="true" />
-            <element signature="e#5447#5448#0" expanded="true" />
-            <element signature="e#5482#5483#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5561#5562#0" expanded="true" />
-            <element signature="e#5601#5602#0" expanded="true" />
-            <element signature="e#5653#5654#0" expanded="true" />
-            <element signature="e#5690#5691#0" expanded="true" />
-            <element signature="e#5761#5762#0" expanded="true" />
-            <element signature="e#5813#5814#0" expanded="true" />
-            <element signature="e#6576#6577#0" expanded="true" />
-            <element signature="e#6615#6616#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1661,6 +1702,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Gradle: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -21,7 +21,7 @@ public class CourseSubSectionList extends CustomList<CourseSubSection>{
 
     @Override
     protected void notifyObservers(CourseSubSection obj) {
-        System.out.println("CourseSubSectionList notifying observers.");
+//        System.out.println("CourseSubSectionList notifying observers.");
         super.notifyObservers(obj);
     }
 

@@ -1,6 +1,5 @@
 package ca.courseplannerv1.model.list;
 
-import ca.courseplannerv1.model.system.Department;
 import ca.courseplannerv1.model.watchers.Observer;
 
 import java.util.ArrayList;
